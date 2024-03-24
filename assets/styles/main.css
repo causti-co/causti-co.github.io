@@ -1,0 +1,474 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Berkeley Mono";
+  src:
+    local("Berkeley Mono"),
+    url("/assets/fonts/BerkeleyMono-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  font-weight: bold;
+  src:
+    local("Berkeley Mono"),
+    url("/assets/fonts/BerkeleyMono-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  font-style: italic;
+  src:
+    local("Berkeley Mono"),
+    url("/assets/fonts/BerkeleyMono-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  font-weight: bold;
+  font-style: italic;
+  src:
+    local("Berkeley Mono"),
+    url("/assets/fonts/BerkeleyMono-BoldItalic.woff") format("woff");
+}
+:link {
+  color: darkorange;
+}
+
+:visited {
+  color: inherit;
+  text-decoration-color: darkorange;
+}
+
+:focus {
+  outline: none;
+  color: white;
+  background-color: darkorange;
+}
+
+:visited:focus {
+  outline: none;
+  color: inherit;
+  background-color: darkorange;
+  text-decoration-color: white;
+}
+main > article.home > .content {
+  height: calc(100vh - 192px);
+}
+
+main > article.home > .content img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 2px solid black;
+  box-sizing: border-box;
+  box-shadow: 4px 4px hotpink;
+}
+main > article.text.list > .content .month > h2 {
+  margin-bottom: 8px;
+}
+
+main > article.text.list > .content .month > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+main > article.text.list > .content .month > ul > li {
+  font-size: 1.2em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+main > article.text.list > .content .month >  ul > li .number {
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+main > article.text.list > .content .month > ul > li a {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: darkorange;
+}
+
+main > article.text.list > .content .month > ul > li a:focus {
+  text-decoration-color: white;
+}
+
+main > article.text.single > .content h1 {
+  font-size: 3em;
+  margin: 8px 0;
+  text-decoration: underline;
+  text-decoration-color: darkorange;
+}
+
+main > article.text.single > .content h4 {
+  margin: 0;
+  color: dimgray;
+}
+
+main > article.text.single > .content p {
+  font-size: 1.2em;
+}
+main > article.photo.single > .content {
+  height: calc(100vh - 192px);
+  min-height: 640px;
+}
+
+main > article.photo.list > .content {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+main > article.photo.single > .content > .photo {
+  height: 100%;
+}
+
+main > article.photo > .content > .photo .button {
+  height: 100%;
+}
+
+main > article.photo > .content > .photo .button > a {
+  display: block;
+  position: relative;
+  height: 100%;
+  color: black;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  box-shadow: 2px 2px black;
+  text-decoration: underline;
+  text-decoration-color: darkorange;
+}
+
+main > article.photo.single > .content > .photo .button > a {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main > article.photo.list > .content > .photo .button:hover > a {
+  top: -4px;
+  left: -4px;
+  box-shadow: 6px 6px black;
+}
+
+main > article.photo.list > .content > .photo .button > a:focus {
+  background-color: orange;
+  text-decoration-color: white;
+}
+
+main > article.photo.list > .content > .photo .button > a:active {
+  text-decoration-color: white;
+  background-color: darkorange;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 2px black;
+}
+
+main > article.photo > .content > .photo .button > a > img {
+  display: block;
+  width: 100%;
+  background-color: whitesmoke;
+  object-fit: cover;
+}
+
+main > article.photo.single > .content > .photo .button > a > img {
+  background-color: dimgray;
+  object-fit: contain;
+}
+
+main > article.photo.single > .content > .photo .button > a > img {
+  height: 0;
+  min-height: 240px;
+  flex-grow: 1;
+}
+
+main > article.photo.list > .content > .photo .button > a > img {
+  height: 240px;
+}
+
+main > article.photo > .content > .photo .button > a > h1 {
+  border-top: 6px double black;
+  margin: 0 0 32px;
+  padding: 0 4px;
+  font-weight: normal;
+}
+
+main > article.photo.single > .content > .photo .button > a > h1 {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-top: 4px;
+  margin-bottom: 48px;
+}
+
+main > article.photo.list > .content > .photo .button > a > .number,
+main > article.photo.single > .content > .photo .button > a > .camera {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  font-weight: bold;
+}
+
+main > article.photo.list > .content > .photo .button > a > .date,
+main > article.photo.single > .content > .photo .button > a > .specs {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+main > article.recs.list > .content .month > h2 {
+  margin-bottom: 8px;
+}
+
+main > article.recs.list > .content .month > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+main > article.recs.list > .content .month > ul > li {
+  font-size: 1.2em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+main > article.recs.list > .content .month >  ul > li .number {
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+main > article.recs.list > .content .month > ul > li p {
+  margin: 0;
+}
+
+main > article.recs.list > .content .month > ul > li img {
+  max-width: 96px;
+  max-height: 96px;
+  border: 2px solid black;
+  float: left;
+  margin: 4px 8px 8px 0;
+  box-sizing: border-box;
+  box-shadow: 2px 2px hotpink;
+}
+
+main > article.recs.list > .content .month > ul > li a {
+  display: block;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: darkorange;
+  margin-bottom: 4px;
+}
+
+main > article.recs.list > .content .month > ul > li a:focus {
+  text-decoration-color: white;
+}
+main > article.about > .content p {
+  font-size: 1.5em;
+}
+
+main > article.about > .content p b {
+  color: whitesmoke;
+  background-color: black;
+  padding: 4px 6px;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+
+main > article.about > .content p u {
+  text-decoration-style: wavy;
+  text-decoration-color: tomato;
+}
+
+main > article.about > .content p .large {
+  font-size: 1.2em;
+  color: black;
+}
+header {
+  padding: 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+header h1 > .dot {
+  height: 24px;
+  vertical-align: middle;
+  margin-top: -10px;
+  animation: rotation 4s infinite reverse linear;
+  cursor: help;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+footer nav {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  background-color: lightgray;
+  border: solid black;
+  border-width: 2px 2px 0;
+}
+
+footer nav > ul {
+  margin: 0;
+  padding: 16px;
+  list-style: none;
+}
+
+footer nav > ul > li {
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+footer nav > ul > li:last-of-type {
+  margin-bottom: 0;
+}
+
+footer nav > ul > li .button > a {
+  display: block;
+  position: relative;
+  padding: 2px 16px 2px 32px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  text-align: right;
+  box-shadow: 2px 2px black;
+  font-size: 1.5em;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: darkorange;
+}
+
+footer nav > ul > li .button:hover > a {
+  top: -4px;
+  left: -4px;
+  box-shadow: 6px 6px black;
+}
+
+footer nav > ul > li .button.here > a {
+  color: white;
+  background-color: gray;
+  top: 2px;
+  left: 2px;
+  box-shadow: -2px -2px black;
+}
+
+footer nav > ul > li .button.here:hover > a {
+  top: 6px;
+  left: 6px;
+  box-shadow: -6px -6px black;
+}
+
+footer nav > ul > li .button > a:focus {
+  color: white;
+  background-color: darkgray;
+  text-decoration-color: darkorange;
+}
+
+footer nav > ul > li .button > a:active {
+  color: white;
+  background-color: gray;
+  text-decoration-color: darkorange;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 2px black;
+}
+
+footer > .content {
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 4px;
+  border: 2px solid black;
+  margin-bottom: 8px;
+}
+
+footer > .content p {
+  margin: 0;
+}
+
+footer > .content .cc .icon {
+  height: 16px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+footer > .content .cc .icon:first-of-type {
+  margin-left: 8px;
+}
+
+html {
+  font-family: "Berkeley Mono", monospace;
+  background-color: gainsboro;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: calc(100vh - 16px);
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: silver;
+  overscroll-behavior: none;
+}
+
+header {
+  height: 72px;
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+  border: solid black;
+  border-width: 2px 0;
+  padding: 16px 180px 32px 8px;
+}
+
+main > article {
+  padding-left: 160px;
+}
+
+main > article > h1 {
+  position: absolute;
+  left: 8px;
+  top: 32px;
+  margin: 0;
+  font-size: 4em;
+  line-height: 1em;
+  text-align: right;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+
+main > article > h1 .small {
+  font-size: 0.5em;
+  line-height: 0.5em;
+  vertical-align: bottom;
+  display: inline-block;
+  position: relative;
+  left: 8px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  background-color: gainsboro;
+}
