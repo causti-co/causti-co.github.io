@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://causti.co/" xml:lang="en">
+	<title>causti • co</title>
+	<subtitle>photo</subtitle>
+	<link href="https://causti.cophoto/feed.xml" rel="self" />
+	<link href="https://causti.co/" />
+	<id>https://causti.co/</id>
+	<updated>2024-04-01T00:00:00Z</updated>
+  <author>
+    <name>Martín Valdés de León</name>
+  </author>
+  <generator>Eleventy v2.0.1</generator>
+  <icon>https://causti.co/assets/icons/favicon.png</icon>
+  <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
+  <category term="photo" />
+  <entry>
+    <title>アカルイミライ</title>
+    <link href="https://causti.co/photo/001-akarui-mirai/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/001-akarui-mirai/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/001-akarui-mirai-1905w.webp" />
+    <id>https://causti.co/photo/001-akarui-mirai/</id>
+    <updated>2024-04-01T00:00:00Z</updated>
+    <published>2024-04-01T00:00:00Z</published>
+    <summary>A black and white photo of the side of a building brightly lit by sunlight. The side of the building is at an angle, such that the left and right thirds of the frame are significantly darker, covered by shadows.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/001-akarui-mirai-1905w.webp&quot; srcset=&quot;https://causti.co/assets/photo/001-akarui-mirai-256w.webp 256w, https://causti.co/assets/photo/001-akarui-mirai-880w.webp 880w, https://causti.co/assets/photo/001-akarui-mirai-1220w.webp 1220w, https://causti.co/assets/photo/001-akarui-mirai-1490w.webp 1490w, https://causti.co/assets/photo/001-akarui-mirai-1710w.webp 1710w, https://causti.co/assets/photo/001-akarui-mirai-1905w.webp 1905w&quot; sizes=&quot;100vw&quot; width=&quot;1905&quot; height=&quot;1905&quot; alt=&quot;A black and white photo of the side of a building brightly lit by sunlight. The side of the building is at an angle, such that the left and right thirds of the frame are significantly darker, covered by shadows.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
+</feed>
