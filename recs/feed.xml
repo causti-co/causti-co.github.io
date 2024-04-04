@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://causti.co/" xml:lang="en">
-	<title>causti • co</title>
-	<subtitle>recs</subtitle>
-	<link href="https://causti.corecs/feed.xml" rel="self" />
-	<link href="https://causti.co/" />
-	<id>https://causti.co/</id>
-	<updated>2024-04-01T00:00:00Z</updated>
+  <title>causti • co</title>
+  <subtitle>recs</subtitle>
+  <link href="https://causti.corecs/feed.xml" rel="self" />
+  <link href="https://causti.co/" />
+  <id>https://causti.co/</id>
+  <updated>2024-04-01T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
@@ -14,14 +14,15 @@
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <category term="recs" />
   <entry>
-		<title>Dr. Katz, Professional Therapist</title>
-		<link href="https://causti.co/recs/" />
+    <title>Dr. Katz, Professional Therapist</title>
+    <link href="https://causti.co/recs/" />
     <link rel="alternate" type="text/html" href="https://causti.co/recs/" />
     <link rel="related" type="text/html" href="https://www.jonathankatz.com/" />
-		<id>https://causti.co/recs/</id>
+    <link rel="alternate" type="image/jpeg" href="https://causti.co/recs/001-dr-katz.jpg" />
+    <id>https://causti.co/recs/</id>
     <updated>2024-04-01T00:00:00Z</updated>
     <published>2024-04-01T00:00:00Z</published>
-		<summary>Dr. Katz, Professional Therapist</summary>
+    <summary>Dr. Katz, Professional Therapist</summary>
     <content type="html">
       &lt;p&gt;I first saw this show as a teenager. It was airing in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Locomotion_(TV_channel)&quot;&gt;local anime channel&lt;/a&gt;, as part of their western adult-focused content.
 And it was a spanish dub. The humor was peculiar, the animation style was unique. I liked it, but did not think much of it.&lt;/p&gt;
@@ -30,5 +31,5 @@ The therapy setting makes it just work. And these were not just random comedians
 &lt;p&gt;I&#39;m linking to Johnatan&#39;s website, you can find the show on DVD and online as well.&lt;/p&gt;
 
     </content>
-	</entry>
+  </entry>
 </feed>

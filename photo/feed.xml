@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://causti.co/" xml:lang="en">
-	<title>causti • co</title>
-	<subtitle>photo</subtitle>
-	<link href="https://causti.cophoto/feed.xml" rel="self" />
-	<link href="https://causti.co/" />
-	<id>https://causti.co/</id>
-	<updated>2024-04-01T00:00:00Z</updated>
+  <title>causti • co</title>
+  <subtitle>photo</subtitle>
+  <link href="https://causti.cophoto/feed.xml" rel="self" />
+  <link href="https://causti.co/" />
+  <id>https://causti.co/</id>
+  <updated>2024-04-01T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
