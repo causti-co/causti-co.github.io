@@ -117,7 +117,7 @@
 <span class="line"><span style="color:#797593">  }</span></span>
 <span class="line"><span style="color:#797593">}</span></span></code></pre>
           <p>I know this stuff looks super convenient, helpful, intuitive, innocent, you name it. But trust me, when you're running <code>ELEVENTY_ENV=development npm run build</code> and you can't for the life of you figure out why <code>console.log(process.env.ELEVENTY_ENV)</code> prints <code>'production'</code>, you're going to want to have a word with whomever wrote those npm scripts.</p>
-          <h2>Foreword</h2>
+          <h2>Postscript</h2>
           <p>Environment variables are fine, as long as they are the right tool for the job. But for anything even slightly more complex than just a few strings or numbers, you really want to be looking at configuration files. It's 2024, let's be honest: you're containerizing and deploying this onto Kubernetes. You do know that Kubernetes lets you inject configuration and secrets into your containers, not only as environment variables, but also as files, right? You have no excuses here.</p>
           <p>Rant over.</p>
         </section>
@@ -146,6 +146,11 @@
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>05.04.24</td>
+                <td><b>fix(text): oops</b></td>
+                <td><a href="https://github.com/causti-co/website/commit/9d98d2e3f52cb68487449d72f0e09c7a76b0150a" target="_blank" rel="noopener noreferrer">9d98d2e</a></td>
+              </tr>
               <tr>
                 <td>05.04.24</td>
                 <td><b>feat: release day</b></td>

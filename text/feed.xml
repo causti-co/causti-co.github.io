@@ -63,7 +63,7 @@
 &lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#797593&quot;&gt;  }&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#797593&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I know this stuff looks super convenient, helpful, intuitive, innocent, you name it. But trust me, when you&#39;re running &lt;code&gt;ELEVENTY_ENV=development npm run build&lt;/code&gt; and you can&#39;t for the life of you figure out why &lt;code&gt;console.log(process.env.ELEVENTY_ENV)&lt;/code&gt; prints &lt;code&gt;&#39;production&#39;&lt;/code&gt;, you&#39;re going to want to have a word with whomever wrote those npm scripts.&lt;/p&gt;
-&lt;h2&gt;Foreword&lt;/h2&gt;
+&lt;h2&gt;Postscript&lt;/h2&gt;
 &lt;p&gt;Environment variables are fine, as long as they are the right tool for the job. But for anything even slightly more complex than just a few strings or numbers, you really want to be looking at configuration files. It&#39;s 2024, let&#39;s be honest: you&#39;re containerizing and deploying this onto Kubernetes. You do know that Kubernetes lets you inject configuration and secrets into your containers, not only as environment variables, but also as files, right? You have no excuses here.&lt;/p&gt;
 &lt;p&gt;Rant over.&lt;/p&gt;
 
