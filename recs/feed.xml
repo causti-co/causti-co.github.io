@@ -5,7 +5,7 @@
   <link href="https://causti.corecs/feed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-04-01T00:00:00Z</updated>
+  <updated>2024-04-05T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
@@ -13,6 +13,23 @@
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <category term="recs" />
+  <entry>
+    <title>π – Music For The Motion Picture</title>
+    <link href="https://causti.co/recs/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/recs/" />
+    <link rel="related" type="text/html" href="https://www.youtube.com/watch?v=4UuCgIi3Dgk" />
+    <link rel="alternate" type="image/jpeg" href="https://causti.co/recs/002-pi-soundtrack.jpg" />
+    <id>https://causti.co/recs/</id>
+    <updated>2024-04-05T00:00:00Z</updated>
+    <published>2024-04-05T00:00:00Z</published>
+    <summary>π – Music For The Motion Picture</summary>
+    <content type="html">
+      &lt;p&gt;This was the first CD that I ever bought.&lt;/p&gt;
+&lt;p&gt;As an awkward geeky teenager, I&#39;d say it&#39;s impossible not to relate to &lt;a href=&quot;https://www.youtube.com/watch?v=jo18VIoR2xU&quot;&gt;Max&lt;/a&gt;. The fact that I&#39;ve had migraines since I was a kid definitely did not help.&lt;/p&gt;
+&lt;p&gt;But this rec is not about the movie, it&#39;s about its soundtrack. Just take a look at &lt;a href=&quot;https://www.discogs.com/master/60010-Various-%CF%80-Music-For-The-Motion-Picture&quot;&gt;the track list&lt;/a&gt;. This is how I found out about &lt;a href=&quot;https://aphextwin.warp.net/&quot;&gt;Aphex Twin&lt;/a&gt; and &lt;a href=&quot;https://www.autechre.ws/&quot;&gt;Autechre&lt;/a&gt;. This how I discovered &lt;a href=&quot;https://ronisize.co.uk/&quot;&gt;Roni Size&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Drum_and_bass&quot;&gt;Drum and bass&lt;/a&gt; in general. Yes, the rest of the album is great, don&#39;t feel sad I did not call your specific artist out, geez.&lt;/p&gt;
+
+    </content>
+  </entry>
   <entry>
     <title>Dr. Katz, Professional Therapist</title>
     <link href="https://causti.co/recs/" />

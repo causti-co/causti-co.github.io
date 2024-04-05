@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <title>causti • co — We need to talk about: Environment variables</title>
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <link rel="icon" href="/assets/icons/favicon.png" sizes="48x48" />
+    <link rel="icon" href="/assets/icons/favicon.svg" sizes="any" />
+    <link rel="canonical" href="https://causti.co/text/002-environment-variables/" />
+    <link rel="alternate" href="https://causti.co/feed.xml" type="application/atom+xml" title="causti • co — We need to talk about: Environment variables — atom feed" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="author" content="Martín Valdés de León" />
+    <meta name="generator" content="Eleventy v2.0.1" />
+    <meta name="description" content="do you ever think about the environment? what it is, and also, what it isn&#39;t. convenience is good. convenience can be dangerous. we need to talk." />
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:site_name" content="causti • co" />
+    <meta property="og:title" content="We need to talk about: Environment variables" />
+    <meta property="og:description" content="do you ever think about the environment? what it is, and also, what it isn&#39;t. convenience is good. convenience can be dangerous. we need to talk." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://causti.co/text/002-environment-variables/" />
+    <meta property="og:image" content="https://causti.co/assets/photo/002-you-have-no-idea-how-lazy-i-am-2105w.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="2105" />
+    <meta property="og:image:height" content="1403" />
+    <meta property="og:image:alt" content="A nighttime telephoto of a crowd gathered around a bumper car ride at a small-time amusement park. The crowd is unlit, and seen only as black silhouettes against the backdrop of the bumper car ride. Smoke is covering part of the ride, catching the light from the park and the bumper cars." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mvaldesdeleon" />
+    <meta name="twitter:creator" content="@mvaldesdeleon" />
+    <meta name="article:published_time" content="2024-04-05T00:00:00.000Z" />
+    <meta name="article:author" content="Martín Valdés de León" />
+    <meta name="article:tag" content="development" />
+    <meta name="article:tag" content="devops" />
+    <meta name="article:tag" content="wntta" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/" tabindex="-1">causti </a><a href="#egg" tabindex="-1"><img class="dot" src="/assets/images/causti.co.svg" alt="·" width="640" height="640" /></a><a href="/" tabindex="-1"> co</a></h1>
+      <div class="actions">
+        <a class="feed" href="https://causti.co/feed.xml" tabindex="-1">
+          <img src="/assets/images/feed.svg" alt="atom feed" width="256" height="256"  />
+        </a>
+      </div>
+      <div id="egg">
+        <div class="palette">
+          <ul>
+            <li class="white"></li>
+            <li class="gray-05"></li>
+            <li class="gray-10"></li>
+            <li class="gray-15"></li>
+            <li class="gray-20"></li>
+            <li class="gray-25"></li>
+            <li class="gray-30"></li>
+            <li class="accent-light"></li>
+            <li class="accent-secondary"></li>
+            <li class="break"></li>
+            <li class="gray-40"></li>
+            <li class="gray-50"></li>
+            <li class="gray-60"></li>
+            <li class="gray-70"></li>
+            <li class="gray-80"></li>
+            <li class="gray-90"></li>
+            <li class="black"></li>
+            <li class="accent-dark"></li>
+            <li class="void"></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="text">
+        <h1>
+          <span class="small">05.04.24&nbsp;&nbsp;</span>&nbsp;te&nbsp;<br/>
+          <span class="small">&nbsp;&nbsp;&nbsp;#002</span>&nbsp;&nbsp;xt
+        </h1>
+        <section class="content">
+          <h1>We need to talk about: Environment variables</h1>
+          <span class="stats">;; 1398w; 7'</span>
+          <h4><b>KEYWORDS:</b> development, devops, wntta</h4>
+          <p>I've been delivering different versions of this rant over the past decade to whomever was there to hear. And seeing as people are still not getting the point, as exemplified by projects like <a href="https://github.com/dotenvx/dotenvx" target="_blank" rel="noopener noreferrer">@dotenvx/dotenvx</a>, <a href="https://github.com/joho/godotenv" target="_blank" rel="noopener noreferrer">joho/godotenv</a>, or <a href="https://github.com/theskumar/python-dotenv" target="_blank" rel="noopener noreferrer">theskumar/python-dotenv</a>, etc., it looks like it's time I get this down in written form.</p>
+          <p>Then at least I can start linking people to here rather than having to repeat myself again. And again. And again.</p>
+          <h2 class="funky">TL;DR</h2>
+          <p><code>.env</code> files are an implementation detail of <em>your</em> environment. <strong>Nothing</strong> in your project should care or know that <code>.env</code> files exist. If you want to use <code>.env</code> files, then you need to: 1/ Add <code>.env</code> to your global <code>~/.gitignore</code> file, and <strong>never</strong> to a project's <code>.gitignore</code> file. 2/ Configure <strong>your environment</strong>, and <strong>not your project</strong>, to load <code>.env</code> files (for example, using <a href="https://github.com/hyperupcall/autoenv" target="_blank" rel="noopener noreferrer">hyperupcall/autoenv</a>).</p>
+          <h2>Variables of the Environment</h2>
+          <p>As a developer, you get exposed to environment variables out of necesity. They are not usually a thing that you need to care about until the first time you encounter a tool or program that is sensitive to the environment, or that expects to get configured via environment variables. So you start digging. You see that your shell seems to have a set of variables. You can list them with <code>printenv</code>. You recognize some of this stuff. You remember how some tools wanted you to add stuff to this <code>PATH</code> variable, and you see the stuff you added. Other stuff seems alien, and you have no clue where it's coming from. You can print a variable with <code>echo $VARIABLE</code>, so you figure you can use them in your shell scripts. You learn you can set new ones, and even pass additional variables to your shell scripts when you run them: <code>NEW_VAR=hello ./myscript.sh</code>. You learn that these variables are accessible to all programs you run from your shell, not just other shell scripts. You learn that this whole &quot;environment variables&quot; thing is actually quite old, and supported across all major platforms.</p>
+          <p>And before you know it, you have a new tool in your toolbox.</p>
+          <h2>Prepare for trouble...</h2>
+          <p>So you use it. You want your programs to be cool programs that can be configured via environment variables. You've seen other do it: that's how you learned about environment variables in the first place. You learn about <a href="https://12factor.net/config" target="_blank" rel="noopener noreferrer">The Twelve-Factor App</a>, and how &quot;The twelve-factor app stores config in environment variables&quot;, and your start passing all kinds of configuration to your application via environment variables.</p>
+          <p>At this point I need to stop what I'm doing and tell you: Please don't. Configuration files are a good thing. They exist for a good reason. If you expect different environments to place their configuration files at different locations, then it makes sense to configure <em>the path from where to load configuration files</em> via environment variables. But I don't have time for that right now, there's more important things I want to get to.</p>
+          <p>Regardless of whether it makes sense or not, the point is that by now you're writing applications that need to get configured via environment variables. So you need to set some environment varibles. So far you've seen how to pass values manually, and how to set them in your current shell, but you don't want to be doing this every time you're writing some code. There has to be a way to set environment variables once in a single place, and have them be available every time you open a new shell. And sure, there is, and you've done this already: your shell's rc file (<code>~/.bashrc</code>, <code>~/.zshrc</code>, etc.). But this feels... <em>wrong</em>... right? It feels weird having to go and edit a global file with project-specific configuration. And if you ever need to provide two projects with different values for the same variable, you're shit out of luck.</p>
+          <p><em>There has to be a better way...</em></p>
+          <h2>...and make it double</h2>
+          <p>So you learn about <code>.env</code> files. You find some convenient library for your either language of choice or JavaScript, add a couple of lines to your project, and that's it. It loads your <code>.env</code> files and the rest just works. Don't forget to add your <code>.env</code> to your project's <code>.gitignore</code> file, you don't want to be committing any secrets, now, do you?</p>
+          <p>Let's quickly recap what you just did: 1/ You externalized your application's configuration to environment variabkes. 2/ You've introduced a convenient way to load a configuration file into your environment variables. Do you think you'll be strong enough to restrain yourself from using <code>.env</code> files in prod? You won't. The alternative would most likely feel clunky in comparison. Why would you store your configuration somewhere else?</p>
+          <p>Even if <em>you</em> don't use a <code>.env</code> file in production, you're going to want to be <strong>sure</strong> that there is no <code>.env</code> file there. Otherwise, you might end up in a situation where you're properly providing a value via environment variables, only to have this value overwriten by a <code>.env</code> file that should not be there. And by this point it should be quite clear that what you've done is reinvent configuration files, except you're restricting yourself to key-value pairs, and forcing your configuration through the &quot;API&quot; of environment variables for no good reason.</p>
+          <p>In the process, you've made your application no longer environment-agnostic. You've made it aware of the specific details of your development environment, and potentially carried that into other environments.</p>
+          <h2>Doing it the right way</h2>
+          <p>I've already mentioned that there are some inherent issues with (ab)using environment variables to configure your applications, and will pick this up again once we're done here, but let's not question that for the moment, and assume that you're using environment variables correctly, and still want a way to conviniently configre your local environment on a per-project level. <code>.env</code> files can be great at that. You just gotta approach it correctly.</p>
+          <p>This is going to be an implementation detail of your environment. Whatever you do, your application should not have to know or care.</p>
+          <h3>Add <code>.env</code> to your global <code>~/.gitignore</code> file</h3>
+          <p>You don't want to commit <code>.env</code> files, but you also don't want to configure this on a per-project basis. Ignore them globally and forget about them.</p>
+          <h3>Source <code>.env</code> files in your shell</h3>
+          <p>You can load <code>.env</code> files by sourcing them in your shell (<code>source .env</code>). Even better, you can automate this process with the approrpiate tooling. I use <a href="https://github.com/hyperupcall/autoenv" target="_blank" rel="noopener noreferrer">hyperupcall/autoenv</a> to automatically load <code>.env</code> files when changing directories.</p>
+          <p>Congratulations! You're now using environment variables correctly. You have a convenient way of configuring your local environment, that does not propagate to other environments. If you want to provide values on a different environment, you'll need to follow that environment's best practices.</p>
+          <h2>Please don't</h2>
+          <p>While I have you here, a couple more things.</p>
+          <p>You do know that environment variables are global to your process, right? Say you're a node developer. There's nothing that keeps code in <code>node_modules/nonsuspicious-library/index.js</code> from peeking at <code>process.env.AWS_ACCESS_KEY_SECRET</code>. You don't need to grant it permission. You won't get a notification. It just can. I assume you've already considered this attack vector. Right?</p>
+          <p>Also, you do know there's a world out there besides key=value pairs, right? If you find yourself doing stuff like <code>GALACTUS_SERVICE_HOSTNAME</code>, <code>GALACTUS_SERVICE_PORT</code>, <code>GALACTUS_SERVICE_VERSION</code>, etc., you probably want to stop what you're doing and go define a configuration file.</p>
+          <p>And please, <strong>please</strong> don't do stuff like this. This is real code from a project that shall remain nameless:</p>
+<pre class="shiki rose-pine-dawn" style="background-color:#faf4ed;color:#575279"><code class="language-json"><span class="line"><span style="color:#797593">{</span></span>
+<span class="line"><span style="color:#797593">  "</span><span style="color:#56949F">name</span><span style="color:#797593">"</span><span style="color:#797593">:</span><span style="color:#EA9D34"> "@unfortunate/developer"</span><span style="color:#797593">,</span></span>
+<span class="line"><span style="color:#797593">  "</span><span style="color:#56949F">version</span><span style="color:#797593">"</span><span style="color:#797593">:</span><span style="color:#EA9D34"> "4.2.0"</span><span style="color:#797593">,</span></span>
+<span class="line"><span style="color:#797593">  "</span><span style="color:#56949F">scripts</span><span style="color:#797593">"</span><span style="color:#797593">:</span><span style="color:#797593"> {</span></span>
+<span class="line"><span style="color:#797593">    "</span><span style="color:#56949F">serve:dev</span><span style="color:#797593">"</span><span style="color:#797593">:</span><span style="color:#EA9D34"> "ELEVENTY_ENV=development eleventy --serve"</span><span style="color:#797593">,</span></span>
+<span class="line"><span style="color:#797593">    "</span><span style="color:#56949F">serve:prod</span><span style="color:#797593">"</span><span style="color:#797593">:</span><span style="color:#EA9D34"> "ELEVENTY_ENV=production eleventy --serve"</span><span style="color:#797593">,</span></span>
+<span class="line"><span style="color:#797593">    "</span><span style="color:#56949F">build</span><span style="color:#797593">"</span><span style="color:#797593">:</span><span style="color:#EA9D34"> "ELEVENTY_ENV=production eleventy"</span><span style="color:#797593">,</span></span>
+<span class="line"><span style="color:#797593">    "</span><span style="color:#56949F">build:dev</span><span style="color:#797593">"</span><span style="color:#797593">:</span><span style="color:#EA9D34"> "ELEVENTY_ENV=development eleventy"</span></span>
+<span class="line"><span style="color:#797593">  }</span></span>
+<span class="line"><span style="color:#797593">}</span></span></code></pre>
+          <p>I know this stuff looks super convenient, helpful, intuitive, innocent, you name it. But trust me, when you're running <code>ELEVENTY_ENV=development npm run build</code> and you can't for the life of you figure out why <code>console.log(process.env.ELEVENTY_ENV)</code> prints <code>'production'</code>, you're going to want to have a word with whomever wrote those npm scripts.</p>
+          <h2>Foreword</h2>
+          <p>Environment variables are fine, as long as they are the right tool for the job. But for anything even slightly more complex than just a few strings or numbers, you really want to be looking at configuration files. It's 2024, let's be honest: you're containerizing and deploying this onto Kubernetes. You do know that Kubernetes lets you inject configuration and secrets into your containers, not only as environment variables, but also as files, right? You have no excuses here.</p>
+          <p>Rant over.</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div id="git">
+        <a class="open" href="#git">
+          <img src="/assets/images/git.svg" alt="Git"/>
+          <img class="selected" src="/assets/images/git.white.svg" alt="open git panel" width="97" height="97" />
+        </a>
+        <a class="close" href="#">
+          <img class="selected" src="/assets/images/git.white.svg" alt="close git panel" width="97" height="97"/>
+        </a>
+        <div class="content">
+          <div class="actions">
+            <a href="https://github.com/causti-co/website/blob/main//src/text/002-environment-variables.md" target="_blank" rel="noopener noreferrer">≡</a>
+            <a href="https://github.com/causti-co/website/edit/main//src/text/002-environment-variables.md" target="_blank" rel="noopener noreferrer">±</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>date</th>
+                <th>subject</th>
+                <th>commit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>05.04.24</td>
+                <td><b>feat: release day</b></td>
+                <td><a href="https://github.com/causti-co/website/commit/a5018198da3a35e6e138d340e79af6479b07efdf" target="_blank" rel="noopener noreferrer">a501819</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><div class="button"><a href="/">home</a></div></li>
+          <li><div class="button"><a href="/text/">text</a></div></li>
+          <li><div class="button"><a href="/photo/">photo</a></div></li>
+          <li><div class="button"><a href="/recs/">recs</a></div></li>
+          <li><div class="button"><a href="/about/">about</a></div></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <p class="cc" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+          <a property="dct:title" rel="cc:attributionURL" href="https://causti.co/">causti • co</a> © 2024 by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://twitter.com/mvaldesdeleon">Martín Valdés de León</a>, is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img class="icon" src="/assets/images/cc/cc.svg" alt="CC" width="64" height="64" /><img class="icon" src="/assets/images/cc/by.svg" alt="BY" width="64" height="64" /><img class="icon" src="/assets/images/cc/nc.svg" alt="NC" width="64" height="64" /><img class="icon" src="/assets/images/cc/nd.svg" alt="ND" width="64" height="64" /></a></p>
+      </div>
+    </footer>
+  </body>
+</html>
