@@ -5,13 +5,56 @@
   <link href="https://causti.cofeed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-04-05T00:00:00Z</updated>
+  <updated>2024-04-12T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
   <generator>Eleventy v2.0.1</generator>
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
+  <entry>
+    <category term="photo" />
+    <title>are you still there?</title>
+    <link href="https://causti.co/photo/003-are-you-still-there/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/003-are-you-still-there/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/003-are-you-still-there-2206w.webp" />
+    <id>https://causti.co/photo/003-are-you-still-there/</id>
+    <updated>2024-04-12T00:00:00Z</updated>
+    <published>2024-04-12T00:00:00Z</published>
+    <summary>A photo of the exterior wall of a building, with a security camera looking along the wall. The wall is covered by a grid-like arrangement of large rectangular tiles, each with a slightly different shade of yellow and natural texture, creating an interesting geometrical texture.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/003-are-you-still-there-2206w.webp&quot; srcset=&quot;https://causti.co/assets/photo/003-are-you-still-there-256w.webp 256w, https://causti.co/assets/photo/003-are-you-still-there-880w.webp 880w, https://causti.co/assets/photo/003-are-you-still-there-1220w.webp 1220w, https://causti.co/assets/photo/003-are-you-still-there-1490w.webp 1490w, https://causti.co/assets/photo/003-are-you-still-there-1710w.webp 1710w, https://causti.co/assets/photo/003-are-you-still-there-1905w.webp 1905w, https://causti.co/assets/photo/003-are-you-still-there-2048w.webp 2048w, https://causti.co/assets/photo/003-are-you-still-there-2206w.webp 2206w&quot; sizes=&quot;100vw&quot; width=&quot;2206&quot; height=&quot;2206&quot; alt=&quot;A photo of the exterior wall of a building, with a security camera looking along the wall. The wall is covered by a grid-like arrangement of large rectangular tiles, each with a slightly different shade of yellow and natural texture, creating an interesting geometrical texture.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
+  <entry>
+    <category term="text" />
+    <title>I was hacked!</title>
+    <link href="https://causti.co/text/003-subdomain-takeover/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/text/003-subdomain-takeover/" />
+    <id>https://causti.co/text/003-subdomain-takeover/</id>
+    <updated>2024-04-07T00:00:00Z</updated>
+    <published>2024-04-07T00:00:00Z</published>
+    <summary>i got lazy. i got lucky. and for a few hours, my house had a side-door leading to an online casino. come take a look. the answer will not surprise you.</summary>
+    <content type="html">
+      &lt;p&gt;Today I woke up with an email from the &amp;quot;Google Search Console Team&amp;quot; informing me that a new owner had been added for &lt;code&gt;http://ftp.causti.co/&lt;/code&gt;. &lt;strong&gt;Not cool.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;WTF!?&lt;/h2&gt;
+&lt;p&gt;First things first: I recognize the subdomain. It was provided by default, configured as a &lt;code&gt;CNAME&lt;/code&gt; record pointing to &lt;code&gt;causti.co&lt;/code&gt;, and I never gave it a second thought. &lt;strong&gt;This will turn out to be my first mistake.&lt;/strong&gt; I immediately assume the worse and go check my DNS access rights and configuration. Everything looks good. No problems with my credentials, and the configuration looks good. I take the hint and enable 2FA, then keep digging.&lt;/p&gt;
+&lt;p&gt;Next I check with the Google Search Console, and after adding this specific URL as a property (which I can do since I own the TLD), I find the user entry created by the attacker. I can also see how they managed to verify ownership of their domain without having access to my DNS: Google lets you perform domain ownership verification by adding a &lt;code&gt;&amp;lt;meta name=&amp;quot;google-site-verification&amp;quot; content=&amp;quot;...&amp;quot; /&amp;gt;&lt;/code&gt; tag with a unique value.&lt;/p&gt;
+&lt;p&gt;With that clue, I check &lt;code&gt;http://ftp.causti.co/&lt;/code&gt; with &lt;code&gt;wget&lt;/code&gt; (maybe I should&#39;ve done this in the first place...) and indeed, the attacker is hosting some scam website from that subdomain, so of course they are able to inject any HTML they want. I can delete their user from the Google Search Console, but they can just keep adding themselves until I fix the issue.&lt;/p&gt;
+&lt;h2&gt;How!?&lt;/h2&gt;
+&lt;p&gt;So the attacker is serving content from one of my subdomains, but they did not compromise my DNS. Let&#39;s dig deeper. This website is hosted in GitHub Pages using an &lt;a href=&quot;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain&quot;&gt;apex domain&lt;/a&gt;. This means &lt;code&gt;causti.co&lt;/code&gt; resolves to an &lt;code&gt;A&lt;/code&gt; record pointing to GitHub IPs. And if &lt;code&gt;ftp.causti.co&lt;/code&gt; resolves to a &lt;code&gt;CNAME&lt;/code&gt; pointing to &lt;code&gt;causti.co&lt;/code&gt;, then it will also resolve to the same GitHub IPs. Indeed, I check the headers of the content coming from &lt;code&gt;http://ftp.causti.co/&lt;/code&gt;, and it&#39;s being served by GitHub.&lt;/p&gt;
+&lt;p&gt;Now at least I understand what is going on. I immediately remove the DNS record for &lt;code&gt;ftp.causti.co&lt;/code&gt;, and confirm there are no other similar unused subdomains that could be taken over in a similar way.&lt;/p&gt;
+&lt;p&gt;Searching for &amp;quot;github pages subdomain takeover&amp;quot; quickly lands me on the &lt;a href=&quot;https://github.com/EdOverflow/can-i-take-over-xyz/issues/68&quot;&gt;can-i-cakeover-xyz&lt;/a&gt; repository, discussing this exact kind of takeover. Here&#39;s what caught me off-guard: It seems that there are (at least) two separate domain ownership verification processes for GitHub, and I was foolish enough to assume they were related. They are not.&lt;/p&gt;
+&lt;p&gt;When I first created this website, I created a &lt;a href=&quot;https://github.com/causti-co&quot;&gt;GitHub Organization&lt;/a&gt;, and while setting it up I had to &lt;a href=&quot;https://docs.github.com/en/organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization&quot;&gt;verify ownership&lt;/a&gt; of the &lt;code&gt;causti.co&lt;/code&gt; domain. What I completely missed was the &lt;a href=&quot;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages#verifying-a-domain-for-your-organization-site&quot;&gt;second domain verification process exclusive to GitHub Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If you don&#39;t do this, anyone GitHub user can configure their repository to use one of your subdomains as a custom domain for their GitHub Pages, and GitHub will not perform any domain ownership verification.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It was the combination of both mistakes that made the takeover possible.&lt;/p&gt;
+&lt;h2&gt;Welp&lt;/h2&gt;
+&lt;p&gt;In retrospect, I&#39;d say I got lucky. The attacker was greedy and wanted to get Google Search insights, which triggered the email that warned me something was off. If they hadn&#39;t, then I probably would not have noticed for Lord knows how long.&lt;/p&gt;
+&lt;p&gt;The overall lesson is clear: &lt;em&gt;It&#39;s always DNS&lt;/em&gt;. I &lt;strong&gt;knew&lt;/strong&gt; about that unused subdomain, I just falsely assumed it to be innocuous. I&#39;ll not be making that mistake in the future again.&lt;/p&gt;
+&lt;p&gt;As for GitHub, I&#39;m still honestly surprised there&#39;s domain ownership verification by default when setting up a custom domain for GitHub Pages. That would be the definitive way to keep this from ever happening again. But until they take any actions, it&#39;s on ourselves to keep our stuff in order.&lt;/p&gt;
+
+    </content>
+  </entry>
   <entry>
     <category term="text" />
     <title>We need to talk about: Environment variables</title>
