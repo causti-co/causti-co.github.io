@@ -86,7 +86,7 @@
           <h2>How!?</h2>
           <p>So the attacker is serving content from one of my subdomains, but they did not compromise my DNS. Let's dig deeper. This website is hosted in GitHub Pages using an <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain" target="_blank" rel="noopener noreferrer">apex domain</a>. This means <code>causti.co</code> resolves to an <code>A</code> record pointing to GitHub IPs. And if <code>ftp.causti.co</code> resolves to a <code>CNAME</code> pointing to <code>causti.co</code>, then it will also resolve to the same GitHub IPs. Indeed, I check the headers of the content coming from <code>http://ftp.causti.co/</code>, and it's being served by GitHub.</p>
           <p>Now at least I understand what is going on. I immediately remove the DNS record for <code>ftp.causti.co</code>, and confirm there are no other similar unused subdomains that could be taken over in a similar way.</p>
-          <p>Searching for &quot;github pages subdomain takeover&quot; quickly lands me on the <a href="https://github.com/EdOverflow/can-i-take-over-xyz/issues/68" target="_blank" rel="noopener noreferrer">can-i-cakeover-xyz</a> repository, discussing this exact kind of takeover. Here's what caught me off-guard: It seems that there are (at least) two separate domain ownership verification processes for GitHub, and I was foolish enough to assume they were related. They are not.</p>
+          <p>Searching for &quot;github pages subdomain takeover&quot; quickly lands me on the <a href="https://github.com/EdOverflow/can-i-take-over-xyz/issues/68" target="_blank" rel="noopener noreferrer">can-i-take-over-xyz</a> repository, discussing this exact kind of takeover. Here's what caught me off-guard: It seems that there are (at least) two separate domain ownership verification processes for GitHub, and I was foolish enough to assume they were related. They are not.</p>
           <p>When I first created this website, I created a <a href="https://github.com/causti-co" target="_blank" rel="noopener noreferrer">GitHub Organization</a>, and while setting it up I had to <a href="https://docs.github.com/en/organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization" target="_blank" rel="noopener noreferrer">verify ownership</a> of the <code>causti.co</code> domain. What I completely missed was the <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages#verifying-a-domain-for-your-organization-site" target="_blank" rel="noopener noreferrer">second domain verification process exclusive to GitHub Pages</a>.</p>
           <p><strong>If you don't do this, any GitHub user can configure their repository to use one of your subdomains as a custom domain for their GitHub Pages, and GitHub will not perform any domain ownership verification.</strong></p>
           <p>It was the combination of both mistakes that made the takeover possible.</p>
@@ -120,6 +120,11 @@
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>07.04.24</td>
+                <td><b>fix(text): another typo</b></td>
+                <td><a href="https://github.com/causti-co/website/commit/f2eabbd414bcb4510d870946a5d6494a697e5b2a" target="_blank" rel="noopener noreferrer">f2eabbd</a></td>
+              </tr>
               <tr>
                 <td>07.04.24</td>
                 <td><b>fix(text): typo</b></td>
