@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <title>causti • co — We need to talk about: SLAs</title>
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <link rel="icon" href="/assets/icons/favicon.png" sizes="48x48" />
+    <link rel="icon" href="/assets/icons/favicon.svg" sizes="any" />
+    <link rel="canonical" href="https://causti.co/text/004-sla/" />
+    <link rel="alternate" href="https://causti.co/feed.xml" type="application/atom+xml" title="causti • co — We need to talk about: SLAs — atom feed" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="author" content="Martín Valdés de León" />
+    <meta name="generator" content="Eleventy v2.0.1" />
+    <meta name="description" content="at night, i hear them scream. —&quot;please!&quot; —&quot;i just want to check that box!&quot; —&quot;why won&#39;t you let me check that box?!&quot; we need to talk." />
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:site_name" content="causti • co" />
+    <meta property="og:title" content="We need to talk about: SLAs" />
+    <meta property="og:description" content="at night, i hear them scream. —&quot;please!&quot; —&quot;i just want to check that box!&quot; —&quot;why won&#39;t you let me check that box?!&quot; we need to talk." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://causti.co/text/004-sla/" />
+    <meta property="og:image" content="https://causti.co/assets/photo/004-again-2447w.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="2447" />
+    <meta property="og:image:height" content="2447" />
+    <meta property="og:image:alt" content="A photo of a pedestrian railroad crossing, shot from a low angle facing upwards. A passing train is caught in the shot, creating a blur as it moves across the frame, partially covered by the pedestrian barriers and warning signs." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mvaldesdeleon" />
+    <meta name="twitter:creator" content="@mvaldesdeleon" />
+    <meta name="article:published_time" content="2024-04-12T00:00:00.000Z" />
+    <meta name="article:author" content="Martín Valdés de León" />
+    <meta name="article:tag" content="architecture" />
+    <meta name="article:tag" content="sre" />
+    <meta name="article:tag" content="devops" />
+    <meta name="article:tag" content="wntta" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/" tabindex="-1">causti </a><a href="#egg" tabindex="-1"><img class="dot" src="/assets/images/causti.co.svg" alt="·" width="640" height="640" /></a><a href="/" tabindex="-1"> co</a></h1>
+      <div class="actions">
+        <a class="feed" href="https://causti.co/feed.xml" tabindex="-1">
+          <img src="/assets/images/feed.svg" alt="atom feed" width="256" height="256"  />
+        </a>
+      </div>
+      <div id="egg">
+        <div class="palette">
+          <ul>
+            <li class="white"></li>
+            <li class="gray-05"></li>
+            <li class="gray-10"></li>
+            <li class="gray-15"></li>
+            <li class="gray-20"></li>
+            <li class="gray-25"></li>
+            <li class="gray-30"></li>
+            <li class="accent-light"></li>
+            <li class="accent-secondary"></li>
+            <li class="break"></li>
+            <li class="gray-40"></li>
+            <li class="gray-50"></li>
+            <li class="gray-60"></li>
+            <li class="gray-70"></li>
+            <li class="gray-80"></li>
+            <li class="gray-90"></li>
+            <li class="black"></li>
+            <li class="accent-dark"></li>
+            <li class="void"></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="text">
+        <h1><span class="offset">te</span><span>xt</span></h1>
+        <h2>
+          <span class="offset">12.04.24</span>
+          <span>#004</span>
+        </h2>
+        <section class="content">
+          <h1>We need to talk about: SLAs</h1>
+          <span class="stats">;;&nbsp;778w;&nbsp;4'</span>
+          <h4><b>KEYWORDS:</b> architecture, sre, devops, wntta</h4>
+          <p>This is going to be a rant about corporate life. I've been working with enterprise customers in one way or another for over 10 years, and in that time <strong>I've not had a single meaningful discussion about Service Level Agreements (SLAs)</strong>.</p>
+          <p>Now, don't get me wrong: I've had plenty of discussions about SLAs. But I can safely say that all of them were a complete waste of my time, for the simple reason that the people who wanted to talk to me about SLAs had no clue what SLAs were or what purpose they serve. Worse yet, ever single time someone wanted to talk to me about SLAs, they were convinced that SLAs were synonymous with &quot;guaranteed minimum availability&quot;.</p>
+          <p>Utter nonsense.</p>
+          <p>So, same as last time, let's set the record straight once and for all.</p>
+          <h2>You probably don't need SLAs</h2>
+          <p>So what <em>are</em> SLAs, anyway?</p>
+          <p>SLAs are contracts. Legally binding documents, carefully drafted by your friendly corporate lawyers. Don't let the technical terminology included delude you, SLAs are not the domain of engineers, they are the domain of lawyers.</p>
+          <p><strong>Corollary 1.</strong> If your SLA does not read like it was written by lawyers, it's probably just words someone put up on a website and not a real SLA.</p>
+          <p>So, if SLAs are contracts and are legally binding, whom do they legally bind, and to what? Broadly speaking, all SLAs are about the same thing: They bind a service provider into not charging you money for a service that was not delivered, or that was not delivered up to some agreed specification. They provide a clear description of the service, define how its quality will be measured, and establish some quality thresholds that needs to be met to avoid having to provide monetary compensation.</p>
+          <p>That is all there is to it. It sounds like a good thing, and it is. But let me illustrate why in practice they are not as relevant as you might expect them to be, from the perspective of a technology consumer.</p>
+          <p>Say you buy a ticket for a concert. If the artist cancels the tour, you'd be entitled to a refund. That's the SLA. Now, say you had deliberately planned your entire holidays around this concert. The only reason you're traveling is to attend this concert, and without it your entire trip no longer makes sense. Would the artist be responsible for any of this? <strong>Hell no</strong>. All that is on you. The artist made sure not to take your money for the service they failed to provide, but whatever else you built on top of this service, and the potential loss that you're now exposed, is entirely your responsibility.</p>
+          <p>That's the issue with SLAs in the real world.</p>
+          <p>If you have a $1000/hour business process running on top of a $10/hour server, the most an SLA will get you is your $10/hour back if the server is down. Can you afford to lose that $990/hour? If the answer is &quot;no&quot;, then you want to look at building a resilient architecture that can tolerate server failures, not at the server's SLA.</p>
+          <p>And when you build this architecture, you now have a clear cost ceiling: Whatever you come up with, if it were to cost more than $990/hour, then you'd be better off letting your process go down and taking the hit. Between that number and your new cost is your potential business case.</p>
+          <h2>When <em>do</em> you need SLAs?</h2>
+          <p>From my experience, as an engineer you'll only care about SLAs when you're the one writing them. That is, when your team owns the service that's charging others money, and you need to offer them some terms that establish the quality you expect to deliver, and under which circumstances you will give them their money back.</p>
+          <p><strong>Corollary 2.</strong> If you're being asked to write an SLA with no input or support from legal, it's probably just words someone wants to put up on a website and not a real SLA.</p>
+          <p>So, what do you do in this case? Well, I can tell you what you don't do: Math based on theoretical availabilities or other SLAs.</p>
+          <p>In a nutshell: Define some indicators of service quality you want to measure and measure them. Once you've collected enough data to understand what your baseline performance for these indicators is, you can define your objectives. From your objectives, you can derive your failure budget and set-up proactive alerting.</p>
+          <p>I could go into details, but I'll be repeating what others have already written down for me in Google's <a href="https://sre.google/workbook/table-of-contents/" target="_blank" rel="noopener noreferrer">Site Reliability Workbook</a> Chapters 2 and 5. Once you have Service Level Objectives (SLOs) you feel confident in, talk to legal.</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div id="git">
+        <a class="open" href="#git">
+          <img src="/assets/images/git.svg" alt="Git"/>
+          <img class="selected" src="/assets/images/git.white.svg" alt="open git panel" width="97" height="97" />
+        </a>
+        <a class="close" href="#">
+          <img class="selected" src="/assets/images/git.white.svg" alt="close git panel" width="97" height="97"/>
+        </a>
+        <div class="content">
+          <div class="actions">
+            <a href="https://github.com/causti-co/website/blob/main//src/text/004-sla.md" target="_blank" rel="noopener noreferrer">≡</a>
+            <a href="https://github.com/causti-co/website/edit/main//src/text/004-sla.md" target="_blank" rel="noopener noreferrer">±</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>date</th>
+                <th>subject</th>
+                <th>commit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12.04.24</td>
+                <td><b>fix(text): sla description and small wording changes</b></td>
+                <td><a href="https://github.com/causti-co/website/commit/5846347dcb7fd7129bd82b5c3008fdf567593340" target="_blank" rel="noopener noreferrer">5846347</a></td>
+              </tr>
+              <tr>
+                <td>12.04.24</td>
+                <td><b>feat: undraft</b></td>
+                <td><a href="https://github.com/causti-co/website/commit/0b1736766b672b8b8cce2c5712aed6880536c2f2" target="_blank" rel="noopener noreferrer">0b17367</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><div class="button"><a href="/">home</a></div></li>
+          <li><div class="button"><a href="/text/">text</a></div></li>
+          <li><div class="button"><a href="/photo/">photo</a></div></li>
+          <li><div class="button"><a href="/recs/">recs</a></div></li>
+          <li><div class="button"><a href="/about/">about</a></div></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <p class="cc" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+          <a property="dct:title" rel="cc:attributionURL" href="https://causti.co/">causti • co</a> © 2024 by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://twitter.com/mvaldesdeleon">Martín Valdés de León</a>, is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img class="icon" src="/assets/images/cc/cc.svg" alt="CC" width="64" height="64" /><img class="icon" src="/assets/images/cc/by.svg" alt="BY" width="64" height="64" /><img class="icon" src="/assets/images/cc/nc.svg" alt="NC" width="64" height="64" /><img class="icon" src="/assets/images/cc/nd.svg" alt="ND" width="64" height="64" /></a></p>
+      </div>
+    </footer>
+  </body>
+</html>

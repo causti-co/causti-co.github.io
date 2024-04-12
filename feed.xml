@@ -5,13 +5,77 @@
   <link href="https://causti.cofeed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-04-07T00:00:00Z</updated>
+  <updated>2024-04-12T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
   <generator>Eleventy v2.0.1</generator>
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
+  <entry>
+    <category term="text" />
+    <title>We need to talk about: SLAs</title>
+    <link href="https://causti.co/text/004-sla/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/text/004-sla/" />
+    <id>https://causti.co/text/004-sla/</id>
+    <updated>2024-04-12T00:00:00Z</updated>
+    <published>2024-04-12T00:00:00Z</published>
+    <summary>at night, i hear them scream. —&quot;please!&quot; —&quot;i just want to check that box!&quot; —&quot;why won&#39;t you let me check that box?!&quot; we need to talk.</summary>
+    <content type="html">
+      &lt;p&gt;This is going to be a rant about corporate life. I&#39;ve been working with enterprise customers in one way or another for over 10 years, and in that time &lt;strong&gt;I&#39;ve not had a single meaningful discussion about Service Level Agreements (SLAs)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Now, don&#39;t get me wrong: I&#39;ve had plenty of discussions about SLAs. But I can safely say that all of them were a complete waste of my time, for the simple reason that the people who wanted to talk to me about SLAs had no clue what SLAs were or what purpose they serve. Worse yet, ever single time someone wanted to talk to me about SLAs, they were convinced that SLAs were synonymous with &amp;quot;guaranteed minimum availability&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Utter nonsense.&lt;/p&gt;
+&lt;p&gt;So, same as last time, let&#39;s set the record straight once and for all.&lt;/p&gt;
+&lt;h2&gt;You probably don&#39;t need SLAs&lt;/h2&gt;
+&lt;p&gt;So what &lt;em&gt;are&lt;/em&gt; SLAs, anyway?&lt;/p&gt;
+&lt;p&gt;SLAs are contracts. Legally binding documents, carefully drafted by your friendly corporate lawyers. Don&#39;t let the technical terminology included delude you, SLAs are not the domain of engineers, they are the domain of lawyers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Corollary 1.&lt;/strong&gt; If your SLA does not read like it was written by lawyers, it&#39;s probably just words someone put up on a website and not a real SLA.&lt;/p&gt;
+&lt;p&gt;So, if SLAs are contracts and are legally binding, whom do they legally bind, and to what? Broadly speaking, all SLAs are about the same thing: They bind a service provider into not charging you money for a service that was not delivered, or that was not delivered up to some agreed specification. They provide a clear description of the service, define how its quality will be measured, and establish some quality thresholds that needs to be met to avoid having to provide monetary compensation.&lt;/p&gt;
+&lt;p&gt;That is all there is to it. It sounds like a good thing, and it is. But let me illustrate why in practice they are not as relevant as you might expect them to be, from the perspective of a technology consumer.&lt;/p&gt;
+&lt;p&gt;Say you buy a ticket for a concert. If the artist cancels the tour, you&#39;d be entitled to a refund. That&#39;s the SLA. Now, say you had deliberately planned your entire holidays around this concert. The only reason you&#39;re traveling is to attend this concert, and without it your entire trip no longer makes sense. Would the artist be responsible for any of this? &lt;strong&gt;Hell no&lt;/strong&gt;. All that is on you. The artist made sure not to take your money for the service they failed to provide, but whatever else you built on top of this service, and the potential loss that you&#39;re now exposed, is entirely your responsibility.&lt;/p&gt;
+&lt;p&gt;That&#39;s the issue with SLAs in the real world.&lt;/p&gt;
+&lt;p&gt;If you have a $1000/hour business process running on top of a $10/hour server, the most an SLA will get you is your $10/hour back if the server is down. Can you afford to lose that $990/hour? If the answer is &amp;quot;no&amp;quot;, then you want to look at building a resilient architecture that can tolerate server failures, not at the server&#39;s SLA.&lt;/p&gt;
+&lt;p&gt;And when you build this architecture, you now have a clear cost ceiling: Whatever you come up with, if it were to cost more than $990/hour, then you&#39;d be better off letting your process go down and taking the hit. Between that number and your new cost is your potential business case.&lt;/p&gt;
+&lt;h2&gt;When &lt;em&gt;do&lt;/em&gt; you need SLAs?&lt;/h2&gt;
+&lt;p&gt;From my experience, as an engineer you&#39;ll only care about SLAs when you&#39;re the one writing them. That is, when your team owns the service that&#39;s charging others money, and you need to offer them some terms that establish the quality you expect to deliver, and under which circumstances you will give them their money back.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Corollary 2.&lt;/strong&gt; If you&#39;re being asked to write an SLA with no input or support from legal, it&#39;s probably just words someone wants to put up on a website and not a real SLA.&lt;/p&gt;
+&lt;p&gt;So, what do you do in this case? Well, I can tell you what you don&#39;t do: Math based on theoretical availabilities or other SLAs.&lt;/p&gt;
+&lt;p&gt;In a nutshell: Define some indicators of service quality you want to measure and measure them. Once you&#39;ve collected enough data to understand what your baseline performance for these indicators is, you can define your objectives. From your objectives, you can derive your failure budget and set-up proactive alerting.&lt;/p&gt;
+&lt;p&gt;I could go into details, but I&#39;ll be repeating what others have already written down for me in Google&#39;s &lt;a href=&quot;https://sre.google/workbook/table-of-contents/&quot;&gt;Site Reliability Workbook&lt;/a&gt; Chapters 2 and 5. Once you have Service Level Objectives (SLOs) you feel confident in, talk to legal.&lt;/p&gt;
+
+    </content>
+  </entry>
+  <entry>
+    <category term="photo" />
+    <title>*clan* *clan* *clan* *clan*</title>
+    <link href="https://causti.co/photo/004-again/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/004-again/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/004-again-2447w.webp" />
+    <id>https://causti.co/photo/004-again/</id>
+    <updated>2024-04-12T00:00:00Z</updated>
+    <published>2024-04-12T00:00:00Z</published>
+    <summary>A photo of a pedestrian railroad crossing, shot from a low angle facing upwards. A passing train is caught in the shot, creating a blur as it moves across the frame, partially covered by the pedestrian barriers and warning signs.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/004-again-2447w.webp&quot; srcset=&quot;https://causti.co/assets/photo/004-again-256w.webp 256w, https://causti.co/assets/photo/004-again-880w.webp 880w, https://causti.co/assets/photo/004-again-1220w.webp 1220w, https://causti.co/assets/photo/004-again-1490w.webp 1490w, https://causti.co/assets/photo/004-again-1710w.webp 1710w, https://causti.co/assets/photo/004-again-1905w.webp 1905w, https://causti.co/assets/photo/004-again-2048w.webp 2048w, https://causti.co/assets/photo/004-again-2447w.webp 2447w&quot; sizes=&quot;100vw&quot; width=&quot;2447&quot; height=&quot;2447&quot; alt=&quot;A photo of a pedestrian railroad crossing, shot from a low angle facing upwards. A passing train is caught in the shot, creating a blur as it moves across the frame, partially covered by the pedestrian barriers and warning signs.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
+  <entry>
+    <category term="recs" />
+    <title>Patrice O&#39;Neal on The Opie &amp; Anthony Show</title>
+    <link href="https://causti.co/recs/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/recs/" />
+    <link rel="related" type="text/html" href="https://www.youtube.com/playlist?list=PL0N2aKW61YXqCLZ-EoOXUrkn_QclWeQMQ" />
+    <link rel="alternate" type="image/jpeg" href="https://causti.co/assets/recs/003-patrice-oneal-opie-anthony.jpg" />
+    <id>https://causti.co/recs/</id>
+    <updated>2024-04-12T00:00:00Z</updated>
+    <published>2024-04-12T00:00:00Z</published>
+    <summary>Patrice O&#39;Neal on The Opie &amp; Anthony Show</summary>
+    <content type="html">
+      &lt;p&gt;There&#39;s this playlist that I keep open in my browser. It&#39;s been open for at least 10 years. Every time it gets to the end, I go back to the beginning and start listening again.&lt;/p&gt;
+&lt;p&gt;What&#39;s in the playlist? 440+ hours of audio, consisting of every time &lt;a href=&quot;https://en.wikipedia.org/wiki/Patrice_O%27Neal&quot;&gt;Patrice O&#39;Neal&lt;/a&gt; was a guest on &lt;a href=&quot;https://en.wikipedia.org/wiki/Opie_and_Anthony&quot;&gt;The Opie &amp;amp; Anthony radio show&lt;/a&gt;. It&#39;s one thing to listen to a stand-up comedian while they are doing a special, or an interview at a late-night show. But it&#39;s something completely different when you get to listen to them just talk shit with their friends. Sure, now that everybody and their mother has a podcast this is not as unique, but you need to put yourself 20 years back in time, when this stuff was going on (the first episodes with Patrice are from 2002). And this was not just Patrice, but rather the entire &lt;a href=&quot;https://www.comedycellar.com/&quot;&gt;Comedy Cellar&lt;/a&gt; crowd: &lt;a href=&quot;https://www.jimnorton.com/&quot;&gt;Jimmy Norton&lt;/a&gt; (3rd mic on O&amp;amp;A), &lt;a href=&quot;https://robertkellylive.com/&quot;&gt;Bob Kelly&lt;/a&gt;, &lt;a href=&quot;https://www.richvos.com/&quot;&gt;Rich Vos&lt;/a&gt;, &lt;a href=&quot;https://billburr.com/&quot;&gt;Bill Burr&lt;/a&gt;, &lt;a href=&quot;https://www.nickdip.com/&quot;&gt;Nick Di Paolo&lt;/a&gt;, &lt;a href=&quot;https://colinquinn.com/&quot;&gt;Colin Quinn&lt;/a&gt;, &lt;a href=&quot;https://louisck.com/&quot;&gt;Louis CK&lt;/a&gt;.&lt;/p&gt;
+
+    </content>
+  </entry>
   <entry>
     <category term="text" />
     <title>I was hacked!</title>
@@ -128,7 +192,7 @@
   </entry>
   <entry>
     <category term="recs" />
-    <title>π – Music For The Motion Picture</title>
+    <title>π — Music For The Motion Picture</title>
     <link href="https://causti.co/recs/" />
     <link rel="alternate" type="text/html" href="https://causti.co/recs/" />
     <link rel="related" type="text/html" href="https://www.youtube.com/watch?v=4UuCgIi3Dgk" />
@@ -136,7 +200,7 @@
     <id>https://causti.co/recs/</id>
     <updated>2024-04-05T00:00:00Z</updated>
     <published>2024-04-05T00:00:00Z</published>
-    <summary>π – Music For The Motion Picture</summary>
+    <summary>π — Music For The Motion Picture</summary>
     <content type="html">
       &lt;p&gt;This was the first CD that I ever bought.&lt;/p&gt;
 &lt;p&gt;As an awkward geeky teenager, I&#39;d say it&#39;s impossible not to relate to &lt;a href=&quot;https://www.youtube.com/watch?v=jo18VIoR2xU&quot;&gt;Max&lt;/a&gt;. The fact that I&#39;ve had migraines since I was a kid definitely did not help.&lt;/p&gt;

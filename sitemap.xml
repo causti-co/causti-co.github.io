@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://causti.co/</loc>
-    <lastmod>2024-04-07T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://causti.co/text/</loc>
-    <lastmod>2024-04-07T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://causti.co/text/004-sla/</loc>
+    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://causti.co/text/003-subdomain-takeover/</loc>
@@ -27,8 +32,13 @@
   </url>
   <url>
     <loc>https://causti.co/photo/</loc>
-    <lastmod>2024-04-07T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://causti.co/photo/004-again/</loc>
+    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://causti.co/photo/003-are-you-still-there/</loc>
@@ -47,13 +57,13 @@
   </url>
   <url>
     <loc>https://causti.co/recs/</loc>
-    <lastmod>2024-04-05T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
   
   <url>
     <loc>https://causti.co/about/</loc>
-    <lastmod>2024-04-08T21:04:57.000Z</lastmod>
+    <lastmod>2024-04-12T19:25:09.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
 </urlset>
