@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://causti.co/</loc>
-    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-15T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -32,8 +32,13 @@
   </url>
   <url>
     <loc>https://causti.co/photo/</loc>
-    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-15T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://causti.co/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto/</loc>
+    <lastmod>2024-04-15T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://causti.co/photo/004-again/</loc>
@@ -63,7 +68,7 @@
   
   <url>
     <loc>https://causti.co/about/</loc>
-    <lastmod>2024-04-12T21:28:07.000Z</lastmod>
+    <lastmod>2024-04-15T20:43:34.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
 </urlset>
