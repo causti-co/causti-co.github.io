@@ -41,6 +41,20 @@
     </content>
   </entry>
   <entry>
+    <category term="photo" />
+    <title>tengo calor</title>
+    <link href="https://causti.co/photo/007-tengo-calor/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/007-tengo-calor/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/007-tengo-calor-3089w.webp" />
+    <id>https://causti.co/photo/007-tengo-calor/</id>
+    <updated>2024-04-15T00:00:00Z</updated>
+    <published>2024-04-15T00:00:00Z</published>
+    <summary>A black and white photo of the inside of a bus. Two kids are sitting down, with a lady tending to one of them while the second kid is sliding the bus window open.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/007-tengo-calor-3089w.webp&quot; srcset=&quot;https://causti.co/assets/photo/007-tengo-calor-256w.webp 256w, https://causti.co/assets/photo/007-tengo-calor-880w.webp 880w, https://causti.co/assets/photo/007-tengo-calor-1220w.webp 1220w, https://causti.co/assets/photo/007-tengo-calor-1490w.webp 1490w, https://causti.co/assets/photo/007-tengo-calor-1710w.webp 1710w, https://causti.co/assets/photo/007-tengo-calor-1905w.webp 1905w, https://causti.co/assets/photo/007-tengo-calor-2048w.webp 2048w, https://causti.co/assets/photo/007-tengo-calor-3089w.webp 3089w&quot; sizes=&quot;100vw&quot; width=&quot;3089&quot; height=&quot;2048&quot; alt=&quot;A black and white photo of the inside of a bus. Two kids are sitting down, with a lady tending to one of them while the second kid is sliding the bus window open.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
+  <entry>
     <category term="text" />
     <title>We need to talk about: SLAs</title>
     <link href="https://causti.co/text/004-sla/" />
