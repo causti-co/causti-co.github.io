@@ -5,7 +5,7 @@
   <link href="https://causti.corecs/feed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-04-12T00:00:00Z</updated>
+  <updated>2024-04-19T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
@@ -13,6 +13,22 @@
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <category term="recs" />
+  <entry>
+    <title>Peep Show</title>
+    <link href="https://causti.co/recs/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/recs/" />
+    <link rel="related" type="text/html" href="https://archive.org/details/peep-show-series1" />
+    <link rel="alternate" type="image/jpeg" href="https://causti.co/assets/recs/004-peep-show.jpg" />
+    <id>https://causti.co/recs/</id>
+    <updated>2024-04-19T00:00:00Z</updated>
+    <published>2024-04-19T00:00:00Z</published>
+    <summary>Peep Show</summary>
+    <content type="html">
+      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/I.Sat&quot;&gt;We had good cable in Argentina&lt;/a&gt;. My theory is that this was mostly economy-driven: We got anime because it was cheaper to license these strange cartoons from Japan that nobody knew about, than the hits from the US. And it was the same with comedy, we got a lot of British shows that nobody had heard about.&lt;/p&gt;
+&lt;p&gt;Peep Show was one of them. I won&#39;t try to describe the show, you need to go and watch it, and I&#39;ve linked the first season which someone uploaded to &lt;a href=&quot;https://archive.org/&quot;&gt;The Internet Archive&lt;/a&gt;. Ok, ok, I&#39;ll try to describe it, but I&#39;ll keep it very short and simple: &lt;a href=&quot;https://www.youtube.com/watch?v=vRBsaJPkt2Q&quot;&gt;Cringe&lt;/a&gt;. You&#39;re not supposed to know what goes on inside the minds of this kind of people, but you do, and you&#39;re forced to on the ride with them. This was also my first contact with &lt;a href=&quot;https://en.wikipedia.org/wiki/David_Mitchell_(comedian)&quot;&gt;David Mitchell&lt;/a&gt;. He&#39;s, unsurprisingly, my kind of person.&lt;/p&gt;
+
+    </content>
+  </entry>
   <entry>
     <title>Patrice O&#39;Neal on The Opie &amp; Anthony Show</title>
     <link href="https://causti.co/recs/" />

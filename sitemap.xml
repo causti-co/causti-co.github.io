@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://causti.co/</loc>
-    <lastmod>2024-04-18T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-19T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://causti.co/text/</loc>
-    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-19T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://causti.co/text/005-website-stack/</loc>
+    <lastmod>2024-04-19T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://causti.co/text/004-sla/</loc>
@@ -32,8 +37,13 @@
   </url>
   <url>
     <loc>https://causti.co/photo/</loc>
-    <lastmod>2024-04-18T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-19T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://causti.co/photo/009-mi-primer-album-va-a-ser-un-exito/</loc>
+    <lastmod>2024-04-19T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://causti.co/photo/008-sala-nueve/</loc>
@@ -77,13 +87,13 @@
   </url>
   <url>
     <loc>https://causti.co/recs/</loc>
-    <lastmod>2024-04-12T00:00:00.000Z</lastmod>
+    <lastmod>2024-04-19T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
   
   <url>
     <loc>https://causti.co/about/</loc>
-    <lastmod>2024-04-18T20:34:04.000Z</lastmod>
+    <lastmod>2024-04-19T22:14:42.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
 </urlset>
