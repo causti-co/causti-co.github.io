@@ -5,13 +5,27 @@
   <link href="https://causti.cofeed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-04-19T00:00:00Z</updated>
+  <updated>2024-04-20T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
   <generator>Eleventy v2.0.1</generator>
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
+  <entry>
+    <category term="photo" />
+    <title>zeit;raum</title>
+    <link href="https://causti.co/photo/010-zeit-raum/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/010-zeit-raum/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/010-zeit-raum-4272w.webp" />
+    <id>https://causti.co/photo/010-zeit-raum/</id>
+    <updated>2024-04-20T00:00:00Z</updated>
+    <published>2024-04-20T00:00:00Z</published>
+    <summary>zeit;raum</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/010-zeit-raum-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/010-zeit-raum-256w.webp 256w, https://causti.co/assets/photo/010-zeit-raum-880w.webp 880w, https://causti.co/assets/photo/010-zeit-raum-1220w.webp 1220w, https://causti.co/assets/photo/010-zeit-raum-1490w.webp 1490w, https://causti.co/assets/photo/010-zeit-raum-1710w.webp 1710w, https://causti.co/assets/photo/010-zeit-raum-1905w.webp 1905w, https://causti.co/assets/photo/010-zeit-raum-2048w.webp 2048w, https://causti.co/assets/photo/010-zeit-raum-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;null&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
   <entry>
     <category term="text" />
     <title>How does this website work</title>
