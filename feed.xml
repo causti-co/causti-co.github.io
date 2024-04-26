@@ -5,13 +5,79 @@
   <link href="https://causti.cofeed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-04-20T00:00:00Z</updated>
+  <updated>2024-04-26T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
   <generator>Eleventy v2.0.1</generator>
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
+  <entry>
+    <category term="text" />
+    <title>Thoughts on teaching</title>
+    <link href="https://causti.co/text/006-on-teaching/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/text/006-on-teaching/" />
+    <id>https://causti.co/text/006-on-teaching/</id>
+    <updated>2024-04-26T00:00:00Z</updated>
+    <published>2024-04-26T00:00:00Z</published>
+    <summary>i would be so happy, if i were a teacher. but i&#39;d be broke. somehow what i do now is more important to society.</summary>
+    <content type="html">
+      &lt;p&gt;I guess most people don&#39;t know, but a for a few years before moving to Germany I was a member of the &lt;a href=&quot;https://www.partidosocialista.org.ar/&quot;&gt;Argentinean Socialist Party&lt;/a&gt;. There&#39;s some fun stories of &lt;em&gt;light political vandalism&lt;/em&gt; to be told, but I&#39;ll save those for another time. The main thing I did as a party member was provide &lt;a href=&quot;https://en.wikipedia.org/wiki/Remedial_education&quot;&gt;remedial education&lt;/a&gt; to whomever would show up at the local party office every Saturday afternoon, which would be a mixture of children currently at elementary or high school, as well as older people going through &lt;a href=&quot;https://en.wikipedia.org/wiki/Adult_education&quot;&gt;adult education&lt;/a&gt;, mostly high-school.&lt;/p&gt;
+&lt;p&gt;It was usually me and one or two more tutors, and we would pick up whichever topic was needed: mathematics, physics, chemistry, history, grammar, you name it. And we&#39;re talking remedial education, so these were not students who were cruising through their classes, rather the opposite. They were usually struggling, and their families were not able to afford a private tutor. Needless to say, I have absolutely no training as an educator, but I was willing to admit my ignorance and use it as a starting point to learn.&lt;/p&gt;
+&lt;h2&gt;There are no stupid students&lt;/h2&gt;
+&lt;p&gt;My main take-away was that there is no such a thing as a stupid student. There is such a thing, however, as a horrible teacher. The one thing that every single person I tutored was in dire need for, was time. Having someone sit next to them, engage with them as they solve a problem, ask them to guide you through their actions and though process, and take the time to understand how they see things. And that was mostly all I had to do, offer them my time.&lt;/p&gt;
+&lt;p&gt;By sitting next to them, I noticed an interesting thing: These people rarely made any &lt;em&gt;mistakes&lt;/em&gt;. By this I mean things like &amp;quot;forgetting&amp;quot; to carry over a minus sign from a previous line or silly things like that. These were universally scarce, and all you had to do was point them out. Once you did, they were as obvious to them as they were to me.&lt;/p&gt;
+&lt;p&gt;But they were still getting the answers to their exercises wrong.&lt;/p&gt;
+&lt;p&gt;Not because they were making mistakes, but because they were operating logically and rationally based on a model of the world that was no longer sound. They had allowed a single falsehood to ingrain itself into their model of the world, and none of their teachers was able to notice and correct this in time.&lt;/p&gt;
+&lt;p&gt;That became my job. Sit next to them, let them work through a problem, and whenever I spotted something that was off, start working backwards until I could finally arrive to this single falsehood and correct it. And then, it&#39;s as if you had suddenly removed stone that was jamming a gear mechanism. Everything else suddenly clicks into place, and all of a sudden they are getting all the exercises right (And if you&#39;re thinking &amp;quot;Hey, that sounds an awful lot like debugging code&amp;quot; then you&#39;ll most likely enjoy my upcoming article on debugging).&lt;/p&gt;
+&lt;p&gt;Imagine how frustrated you would feel if you did everything you thought was right, and still arrived at an incorrect result, and got absolutely no feedback as to why or how to address it, only that you got it wrong and you suck.&lt;/p&gt;
+&lt;h2&gt;Work is not that different&lt;/h2&gt;
+&lt;p&gt;At this point in my career, I&#39;m mostly paid to write and talk to people. And some of the people I have to talk to are wrong. Now, here&#39;s a funny thing about people for all the non-humans out there reading this: People &lt;strong&gt;really do not like&lt;/strong&gt; being told they are wrong. Luckily, many of the things we just mentioned are still valid in this context.&lt;/p&gt;
+&lt;p&gt;People who are wrong, for the most part, are not making &lt;em&gt;mistakes&lt;/em&gt; when they arrive to a wrong conclusion. They are acting logically and rationally, but there&#39;s something in their model of the world that is off. There are a couple of differences that we need to account for, however.&lt;/p&gt;
+&lt;p&gt;First, unlike students, these people are not in the room with me &lt;em&gt;to be taught&lt;/em&gt;. In the best case they are looking for advice as peers, and in the worst case they think I&#39;m there to try and sell them something. So even if I can identify the falsehood in their world model, I need to guide them into noticing it themselves, rather than pointing it out directly. Otherwise, they&#39;ll most likely reject it. I&#39;d say that this feels more like therapy, but my understanding of therapy is based purely on &lt;a href=&quot;https://tvtropes.org/pmwiki/pmwiki.php/Main/HollywoodPsych&quot;&gt;US fiction&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Second, &lt;strong&gt;they might actually be right&lt;/strong&gt;. When a student makes a mistake, there&#39;s usually no room for debate. But in this case, I always have to entertain the notion that it might be me who is wrong. I&#39;m not &lt;em&gt;that&lt;/em&gt; full of myself. This is also inherently a good thing: It&#39;s how I grow. I am my worst, most relentless critic, and this helps keep myself in check.&lt;/p&gt;
+&lt;p&gt;A framework I&#39;ve found incredibly helpful in both helping me explore the possibility that I might be wrong, as well as helping me identify the potential falsehood in someone&#39;s world model, is to honestly ask myself:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What do they know that I don&#39;t know?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What vital piece of information am I missing, that where I to add it to my own world model, would cause me to arrive to the same conclusion as they are?&lt;/p&gt;
+&lt;p&gt;Work backwards from their apparently wrong conclusion, applying logic and reason, and reverse-engineer a path to the knowledge that you might be lacking. If you&#39;re only going to take one thing away from this article, this should be it.&lt;/p&gt;
+&lt;p&gt;There&#39;s another silly anecdote that comes to mind about the multiple choice exams I had to take for my introductory &lt;a href=&quot;http://www.mate.cbc.uba.ar/27/teoricas.htm&quot;&gt;Algebra&lt;/a&gt; and &lt;a href=&quot;http://www.mate.cbc.uba.ar/66/teoricas.htm&quot;&gt;Calculus&lt;/a&gt; courses, but that too will have to wait for another time.&lt;/p&gt;
+
+    </content>
+  </entry>
+  <entry>
+    <category term="photo" />
+    <title>still waiting</title>
+    <link href="https://causti.co/photo/011-still-waiting/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/011-still-waiting/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/011-still-waiting-4160w.webp" />
+    <id>https://causti.co/photo/011-still-waiting/</id>
+    <updated>2024-04-26T00:00:00Z</updated>
+    <published>2024-04-26T00:00:00Z</published>
+    <summary>An information stall inside a Barcelona subway station. There&#39;s a bright red SOS sign, a yellow telephone, and two well-lit maps.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/011-still-waiting-4160w.webp&quot; srcset=&quot;https://causti.co/assets/photo/011-still-waiting-256w.webp 256w, https://causti.co/assets/photo/011-still-waiting-880w.webp 880w, https://causti.co/assets/photo/011-still-waiting-1220w.webp 1220w, https://causti.co/assets/photo/011-still-waiting-1490w.webp 1490w, https://causti.co/assets/photo/011-still-waiting-1710w.webp 1710w, https://causti.co/assets/photo/011-still-waiting-1905w.webp 1905w, https://causti.co/assets/photo/011-still-waiting-2048w.webp 2048w, https://causti.co/assets/photo/011-still-waiting-4160w.webp 4160w&quot; sizes=&quot;100vw&quot; width=&quot;4160&quot; height=&quot;4160&quot; alt=&quot;An information stall inside a Barcelona subway station. There&#39;s a bright red SOS sign, a yellow telephone, and two well-lit maps.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
+  <entry>
+    <category term="recs" />
+    <title>Serial Experiments Lain</title>
+    <link href="https://causti.co/recs/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/recs/" />
+    <link rel="related" type="text/html" href="https://archive.org/details/09-sel-protocol/01SEL+Weird.mp4" />
+    <link rel="alternate" type="image/jpeg" href="https://causti.co/assets/recs/005-lain.jpg" />
+    <id>https://causti.co/recs/</id>
+    <updated>2024-04-26T00:00:00Z</updated>
+    <published>2024-04-26T00:00:00Z</published>
+    <summary>Serial Experiments Lain</summary>
+    <content type="html">
+      &lt;p&gt;A recurring topic in &lt;a href=&quot;https://en.wikipedia.org/wiki/Cyberpunk&quot;&gt;Cyberpunk literature&lt;/a&gt; deals with questioning our perception and definition of reality, with technology playing the role of an enabler that can tear down the barriers between the realm of reality and humans, and that of virtuality and artificial intelligence.&lt;/p&gt;
+&lt;p&gt;Does it make Gods out of hackers? Or does it make software out of humans? Will our bodies enable us, or constrain us?&lt;/p&gt;
+&lt;p&gt;Present day... present time...&lt;/p&gt;
+
+    </content>
+  </entry>
   <entry>
     <category term="photo" />
     <title>zeit;raum</title>
@@ -21,9 +87,9 @@
     <id>https://causti.co/photo/010-zeit-raum/</id>
     <updated>2024-04-20T00:00:00Z</updated>
     <published>2024-04-20T00:00:00Z</published>
-    <summary>zeit;raum</summary>
+    <summary>The corner of a dimly lit empty bed, in the corner of a room. The bedsheets are tossed and the walls are filthy.</summary>
     <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/010-zeit-raum-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/010-zeit-raum-256w.webp 256w, https://causti.co/assets/photo/010-zeit-raum-880w.webp 880w, https://causti.co/assets/photo/010-zeit-raum-1220w.webp 1220w, https://causti.co/assets/photo/010-zeit-raum-1490w.webp 1490w, https://causti.co/assets/photo/010-zeit-raum-1710w.webp 1710w, https://causti.co/assets/photo/010-zeit-raum-1905w.webp 1905w, https://causti.co/assets/photo/010-zeit-raum-2048w.webp 2048w, https://causti.co/assets/photo/010-zeit-raum-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;null&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+      &lt;img src=&quot;https://causti.co/assets/photo/010-zeit-raum-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/010-zeit-raum-256w.webp 256w, https://causti.co/assets/photo/010-zeit-raum-880w.webp 880w, https://causti.co/assets/photo/010-zeit-raum-1220w.webp 1220w, https://causti.co/assets/photo/010-zeit-raum-1490w.webp 1490w, https://causti.co/assets/photo/010-zeit-raum-1710w.webp 1710w, https://causti.co/assets/photo/010-zeit-raum-1905w.webp 1905w, https://causti.co/assets/photo/010-zeit-raum-2048w.webp 2048w, https://causti.co/assets/photo/010-zeit-raum-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;The corner of a dimly lit empty bed, in the corner of a room. The bedsheets are tossed and the walls are filthy.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
     </content>
   </entry>
   <entry>
@@ -432,9 +498,9 @@
     <id>https://causti.co/photo/009-mi-primer-album-va-a-ser-un-exito/</id>
     <updated>2024-04-19T00:00:00Z</updated>
     <published>2024-04-19T00:00:00Z</published>
-    <summary>mi primer album va a ser un exito</summary>
+    <summary>A man in a white shirt is looking down a glass ceiling. He&#39;s resting against a bright yellow handrail that creates a sharp angle across the frame. We can see his reflection in the glass looking back at him.</summary>
     <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2268w.webp&quot; srcset=&quot;https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-256w.webp 256w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-880w.webp 880w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1220w.webp 1220w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1490w.webp 1490w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1710w.webp 1710w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1905w.webp 1905w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2048w.webp 2048w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2268w.webp 2268w&quot; sizes=&quot;100vw&quot; width=&quot;2268&quot; height=&quot;2268&quot; alt=&quot;null&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+      &lt;img src=&quot;https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2268w.webp&quot; srcset=&quot;https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-256w.webp 256w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-880w.webp 880w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1220w.webp 1220w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1490w.webp 1490w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1710w.webp 1710w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1905w.webp 1905w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2048w.webp 2048w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2268w.webp 2268w&quot; sizes=&quot;100vw&quot; width=&quot;2268&quot; height=&quot;2268&quot; alt=&quot;A man in a white shirt is looking down a glass ceiling. He&#39;s resting against a bright yellow handrail that creates a sharp angle across the frame. We can see his reflection in the glass looking back at him.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
     </content>
   </entry>
   <entry>
@@ -463,9 +529,9 @@
     <id>https://causti.co/photo/008-sala-nueve/</id>
     <updated>2024-04-18T00:00:00Z</updated>
     <published>2024-04-18T00:00:00Z</published>
-    <summary>a dark, empty room. to the left, light pours in from an adjacent hallway. the top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.</summary>
+    <summary>A dark, empty room. To the left, light pours in from an adjacent hallway. The top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.</summary>
     <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/008-sala-nueve-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/008-sala-nueve-256w.webp 256w, https://causti.co/assets/photo/008-sala-nueve-880w.webp 880w, https://causti.co/assets/photo/008-sala-nueve-1220w.webp 1220w, https://causti.co/assets/photo/008-sala-nueve-1490w.webp 1490w, https://causti.co/assets/photo/008-sala-nueve-1710w.webp 1710w, https://causti.co/assets/photo/008-sala-nueve-1905w.webp 1905w, https://causti.co/assets/photo/008-sala-nueve-2048w.webp 2048w, https://causti.co/assets/photo/008-sala-nueve-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;a dark, empty room. to the left, light pours in from an adjacent hallway. the top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+      &lt;img src=&quot;https://causti.co/assets/photo/008-sala-nueve-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/008-sala-nueve-256w.webp 256w, https://causti.co/assets/photo/008-sala-nueve-880w.webp 880w, https://causti.co/assets/photo/008-sala-nueve-1220w.webp 1220w, https://causti.co/assets/photo/008-sala-nueve-1490w.webp 1490w, https://causti.co/assets/photo/008-sala-nueve-1710w.webp 1710w, https://causti.co/assets/photo/008-sala-nueve-1905w.webp 1905w, https://causti.co/assets/photo/008-sala-nueve-2048w.webp 2048w, https://causti.co/assets/photo/008-sala-nueve-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;A dark, empty room. To the left, light pours in from an adjacent hallway. The top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
     </content>
   </entry>
   <entry>
@@ -763,40 +829,6 @@
 &lt;/table&gt;
 &lt;p&gt;The first two years are the same, but then it starts to get interesting. Year two, you star to socialize. Year three is your early childhood. Year four is the core of your youth. Year five you&#39;re a young adult. Year six is the major part of your life. And finally year seven is when you retire and die. Every year you have twice as much time to accomplish things as the previous one. Every year puts you twice as close to the end of your life as the previous one.&lt;/p&gt;
 &lt;p&gt;Me? I recently turned 6. Fuck.&lt;/p&gt;
-
-    </content>
-  </entry>
-  <entry>
-    <category term="photo" />
-    <title>アカルイミライ</title>
-    <link href="https://causti.co/photo/001-akarui-mirai/" />
-    <link rel="alternate" type="text/html" href="https://causti.co/photo/001-akarui-mirai/" />
-    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/001-akarui-mirai-1905w.webp" />
-    <id>https://causti.co/photo/001-akarui-mirai/</id>
-    <updated>2024-04-01T00:00:00Z</updated>
-    <published>2024-04-01T00:00:00Z</published>
-    <summary>A black and white photo of the side of a building brightly lit by sunlight. The side of the building is at an angle, such that the left and right thirds of the frame are significantly darker, covered by shadows.</summary>
-    <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/001-akarui-mirai-1905w.webp&quot; srcset=&quot;https://causti.co/assets/photo/001-akarui-mirai-256w.webp 256w, https://causti.co/assets/photo/001-akarui-mirai-880w.webp 880w, https://causti.co/assets/photo/001-akarui-mirai-1220w.webp 1220w, https://causti.co/assets/photo/001-akarui-mirai-1490w.webp 1490w, https://causti.co/assets/photo/001-akarui-mirai-1710w.webp 1710w, https://causti.co/assets/photo/001-akarui-mirai-1905w.webp 1905w&quot; sizes=&quot;100vw&quot; width=&quot;1905&quot; height=&quot;1905&quot; alt=&quot;A black and white photo of the side of a building brightly lit by sunlight. The side of the building is at an angle, such that the left and right thirds of the frame are significantly darker, covered by shadows.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
-    </content>
-  </entry>
-  <entry>
-    <category term="recs" />
-    <title>Dr. Katz, Professional Therapist</title>
-    <link href="https://causti.co/recs/" />
-    <link rel="alternate" type="text/html" href="https://causti.co/recs/" />
-    <link rel="related" type="text/html" href="https://www.jonathankatz.com/" />
-    <link rel="alternate" type="image/jpeg" href="https://causti.co/assets/recs/001-dr-katz.jpg" />
-    <id>https://causti.co/recs/</id>
-    <updated>2024-04-01T00:00:00Z</updated>
-    <published>2024-04-01T00:00:00Z</published>
-    <summary>Dr. Katz, Professional Therapist</summary>
-    <content type="html">
-      &lt;p&gt;I first saw this show as a teenager. It was airing in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Locomotion_(TV_channel)&quot;&gt;local anime channel&lt;/a&gt;, as part of their western adult-focused content.
-And it was a Spanish dub. The humor was peculiar, the animation style was unique. I liked it, but did not think much of it.&lt;/p&gt;
-&lt;p&gt;It was when rediscovering it a few years later than I realized the genius of this show: It&#39;s just all a great excuse to have comedians come in and do a few minutes of material, as-is.
-The therapy setting makes it just work. And these were not just random comedians. You had &lt;a href=&quot;https://www.ronlynch1.com/&quot;&gt;Ron Lynch&lt;/a&gt;, &lt;a href=&quot;https://sarahsilvermanmerch.com/&quot;&gt;Sarah Silverman&lt;/a&gt;, &lt;a href=&quot;https://www.jakethis.com/&quot;&gt;Jake Johannsen&lt;/a&gt;, &lt;a href=&quot;https://www.judytenuta.com/&quot;&gt;Judy Tenuta&lt;/a&gt;, &lt;a href=&quot;https://louisck.com/&quot;&gt;Louis CK&lt;/a&gt;, &lt;a href=&quot;https://officialdavidcross.com/&quot;&gt;David Cross&lt;/a&gt;, and the list &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Dr._Katz,_Professional_Therapist_episodes&quot;&gt;just keeps going&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I&#39;m linking to Jonathan&#39;s website, you can find the show on DVD and &lt;a href=&quot;https://www.youtube.com/playlist?list=PL3H6z037pboGUWNoRht95JX5Vo15ZKtFb&quot;&gt;online&lt;/a&gt; as well. Please &lt;strong&gt;do not&lt;/strong&gt; watch the &amp;quot;HD&amp;quot; version, it&#39;s an AI upscale that completely destroys the original animation style.&lt;/p&gt;
 
     </content>
   </entry>

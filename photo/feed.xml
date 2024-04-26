@@ -5,7 +5,7 @@
   <link href="https://causti.cophoto/feed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-04-20T00:00:00Z</updated>
+  <updated>2024-04-26T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
@@ -14,6 +14,19 @@
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <category term="photo" />
   <entry>
+    <title>still waiting</title>
+    <link href="https://causti.co/photo/011-still-waiting/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/011-still-waiting/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/011-still-waiting-4160w.webp" />
+    <id>https://causti.co/photo/011-still-waiting/</id>
+    <updated>2024-04-26T00:00:00Z</updated>
+    <published>2024-04-26T00:00:00Z</published>
+    <summary>An information stall inside a Barcelona subway station. There&#39;s a bright red SOS sign, a yellow telephone, and two well-lit maps.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/011-still-waiting-4160w.webp&quot; srcset=&quot;https://causti.co/assets/photo/011-still-waiting-256w.webp 256w, https://causti.co/assets/photo/011-still-waiting-880w.webp 880w, https://causti.co/assets/photo/011-still-waiting-1220w.webp 1220w, https://causti.co/assets/photo/011-still-waiting-1490w.webp 1490w, https://causti.co/assets/photo/011-still-waiting-1710w.webp 1710w, https://causti.co/assets/photo/011-still-waiting-1905w.webp 1905w, https://causti.co/assets/photo/011-still-waiting-2048w.webp 2048w, https://causti.co/assets/photo/011-still-waiting-4160w.webp 4160w&quot; sizes=&quot;100vw&quot; width=&quot;4160&quot; height=&quot;4160&quot; alt=&quot;An information stall inside a Barcelona subway station. There&#39;s a bright red SOS sign, a yellow telephone, and two well-lit maps.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
+  <entry>
     <title>zeit;raum</title>
     <link href="https://causti.co/photo/010-zeit-raum/" />
     <link rel="alternate" type="text/html" href="https://causti.co/photo/010-zeit-raum/" />
@@ -21,9 +34,9 @@
     <id>https://causti.co/photo/010-zeit-raum/</id>
     <updated>2024-04-20T00:00:00Z</updated>
     <published>2024-04-20T00:00:00Z</published>
-    <summary></summary>
+    <summary>The corner of a dimly lit empty bed, in the corner of a room. The bedsheets are tossed and the walls are filthy.</summary>
     <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/010-zeit-raum-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/010-zeit-raum-256w.webp 256w, https://causti.co/assets/photo/010-zeit-raum-880w.webp 880w, https://causti.co/assets/photo/010-zeit-raum-1220w.webp 1220w, https://causti.co/assets/photo/010-zeit-raum-1490w.webp 1490w, https://causti.co/assets/photo/010-zeit-raum-1710w.webp 1710w, https://causti.co/assets/photo/010-zeit-raum-1905w.webp 1905w, https://causti.co/assets/photo/010-zeit-raum-2048w.webp 2048w, https://causti.co/assets/photo/010-zeit-raum-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;null&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+      &lt;img src=&quot;https://causti.co/assets/photo/010-zeit-raum-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/010-zeit-raum-256w.webp 256w, https://causti.co/assets/photo/010-zeit-raum-880w.webp 880w, https://causti.co/assets/photo/010-zeit-raum-1220w.webp 1220w, https://causti.co/assets/photo/010-zeit-raum-1490w.webp 1490w, https://causti.co/assets/photo/010-zeit-raum-1710w.webp 1710w, https://causti.co/assets/photo/010-zeit-raum-1905w.webp 1905w, https://causti.co/assets/photo/010-zeit-raum-2048w.webp 2048w, https://causti.co/assets/photo/010-zeit-raum-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;The corner of a dimly lit empty bed, in the corner of a room. The bedsheets are tossed and the walls are filthy.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
     </content>
   </entry>
   <entry>
@@ -34,9 +47,9 @@
     <id>https://causti.co/photo/009-mi-primer-album-va-a-ser-un-exito/</id>
     <updated>2024-04-19T00:00:00Z</updated>
     <published>2024-04-19T00:00:00Z</published>
-    <summary></summary>
+    <summary>A man in a white shirt is looking down a glass ceiling. He&#39;s resting against a bright yellow handrail that creates a sharp angle across the frame. We can see his reflection in the glass looking back at him.</summary>
     <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2268w.webp&quot; srcset=&quot;https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-256w.webp 256w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-880w.webp 880w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1220w.webp 1220w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1490w.webp 1490w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1710w.webp 1710w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1905w.webp 1905w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2048w.webp 2048w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2268w.webp 2268w&quot; sizes=&quot;100vw&quot; width=&quot;2268&quot; height=&quot;2268&quot; alt=&quot;null&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+      &lt;img src=&quot;https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2268w.webp&quot; srcset=&quot;https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-256w.webp 256w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-880w.webp 880w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1220w.webp 1220w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1490w.webp 1490w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1710w.webp 1710w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-1905w.webp 1905w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2048w.webp 2048w, https://causti.co/assets/photo/009-mi-primer-album-va-a-ser-un-exito-2268w.webp 2268w&quot; sizes=&quot;100vw&quot; width=&quot;2268&quot; height=&quot;2268&quot; alt=&quot;A man in a white shirt is looking down a glass ceiling. He&#39;s resting against a bright yellow handrail that creates a sharp angle across the frame. We can see his reflection in the glass looking back at him.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
     </content>
   </entry>
   <entry>
@@ -47,9 +60,9 @@
     <id>https://causti.co/photo/008-sala-nueve/</id>
     <updated>2024-04-18T00:00:00Z</updated>
     <published>2024-04-18T00:00:00Z</published>
-    <summary>a dark, empty room. to the left, light pours in from an adjacent hallway. the top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.</summary>
+    <summary>A dark, empty room. To the left, light pours in from an adjacent hallway. The top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.</summary>
     <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/008-sala-nueve-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/008-sala-nueve-256w.webp 256w, https://causti.co/assets/photo/008-sala-nueve-880w.webp 880w, https://causti.co/assets/photo/008-sala-nueve-1220w.webp 1220w, https://causti.co/assets/photo/008-sala-nueve-1490w.webp 1490w, https://causti.co/assets/photo/008-sala-nueve-1710w.webp 1710w, https://causti.co/assets/photo/008-sala-nueve-1905w.webp 1905w, https://causti.co/assets/photo/008-sala-nueve-2048w.webp 2048w, https://causti.co/assets/photo/008-sala-nueve-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;a dark, empty room. to the left, light pours in from an adjacent hallway. the top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+      &lt;img src=&quot;https://causti.co/assets/photo/008-sala-nueve-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/008-sala-nueve-256w.webp 256w, https://causti.co/assets/photo/008-sala-nueve-880w.webp 880w, https://causti.co/assets/photo/008-sala-nueve-1220w.webp 1220w, https://causti.co/assets/photo/008-sala-nueve-1490w.webp 1490w, https://causti.co/assets/photo/008-sala-nueve-1710w.webp 1710w, https://causti.co/assets/photo/008-sala-nueve-1905w.webp 1905w, https://causti.co/assets/photo/008-sala-nueve-2048w.webp 2048w, https://causti.co/assets/photo/008-sala-nueve-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;A dark, empty room. To the left, light pours in from an adjacent hallway. The top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
     </content>
   </entry>
   <entry>
