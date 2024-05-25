@@ -5,7 +5,7 @@
   <link href="https://causti.cophoto/feed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-04-26T00:00:00Z</updated>
+  <updated>2024-05-25T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
@@ -13,6 +13,19 @@
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <category term="photo" />
+  <entry>
+    <title>what am i doing except being here</title>
+    <link href="https://causti.co/photo/012-what-am-i-doing-except-being-here/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/012-what-am-i-doing-except-being-here/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-4160w.webp" />
+    <id>https://causti.co/photo/012-what-am-i-doing-except-being-here/</id>
+    <updated>2024-05-25T00:00:00Z</updated>
+    <published>2024-05-25T00:00:00Z</published>
+    <summary>The street outside of a parking garage, during the night. A dim light shines from the parking garage wall, higlighting its geometric patterns. The pavement is wet from the rain.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-4160w.webp&quot; srcset=&quot;https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-256w.webp 256w, https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-880w.webp 880w, https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-1220w.webp 1220w, https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-1490w.webp 1490w, https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-1710w.webp 1710w, https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-1905w.webp 1905w, https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-2048w.webp 2048w, https://causti.co/assets/photo/012-what-am-i-doing-except-being-here-4160w.webp 4160w&quot; sizes=&quot;100vw&quot; width=&quot;4160&quot; height=&quot;4160&quot; alt=&quot;The street outside of a parking garage, during the night. A dim light shines from the parking garage wall, higlighting its geometric patterns. The pavement is wet from the rain.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
   <entry>
     <title>still waiting</title>
     <link href="https://causti.co/photo/011-still-waiting/" />
