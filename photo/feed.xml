@@ -5,7 +5,7 @@
   <link href="https://causti.cophoto/feed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-05-26T00:00:00Z</updated>
+  <updated>2024-07-21T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
@@ -13,6 +13,19 @@
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <category term="photo" />
+  <entry>
+    <title>silence</title>
+    <link href="https://causti.co/photo/014-silence/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/014-silence/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/014-silence-4272w.webp" />
+    <id>https://causti.co/photo/014-silence/</id>
+    <updated>2024-07-21T00:00:00Z</updated>
+    <published>2024-07-21T00:00:00Z</published>
+    <summary>A single microwave antena sits atop a modern building.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/014-silence-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/014-silence-256w.webp 256w, https://causti.co/assets/photo/014-silence-880w.webp 880w, https://causti.co/assets/photo/014-silence-1220w.webp 1220w, https://causti.co/assets/photo/014-silence-1490w.webp 1490w, https://causti.co/assets/photo/014-silence-1710w.webp 1710w, https://causti.co/assets/photo/014-silence-1905w.webp 1905w, https://causti.co/assets/photo/014-silence-2048w.webp 2048w, https://causti.co/assets/photo/014-silence-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2403&quot; alt=&quot;A single microwave antena sits atop a modern building.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
   <entry>
     <title>mothra</title>
     <link href="https://causti.co/photo/013-mothra/" />

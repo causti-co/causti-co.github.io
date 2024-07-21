@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://causti.co/</loc>
-    <lastmod>2024-05-26T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-21T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://causti.co/text/</loc>
-    <lastmod>2024-04-26T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-21T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://causti.co/text/007-thinking-about-thinking/</loc>
+    <lastmod>2024-07-21T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://causti.co/text/006-on-teaching/</loc>
@@ -42,8 +47,13 @@
   </url>
   <url>
     <loc>https://causti.co/photo/</loc>
-    <lastmod>2024-05-26T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-21T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://causti.co/photo/014-silence/</loc>
+    <lastmod>2024-07-21T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://causti.co/photo/013-mothra/</loc>
@@ -118,7 +128,7 @@
   
   <url>
     <loc>https://causti.co/about/</loc>
-    <lastmod>2024-06-29T23:48:21.000Z</lastmod>
+    <lastmod>2024-07-21T04:46:26.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
 </urlset>
