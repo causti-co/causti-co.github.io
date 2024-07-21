@@ -51,6 +51,11 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://causti.co/photo/015-fumbled-it/</loc>
+    <lastmod>2024-07-21T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://causti.co/photo/014-silence/</loc>
     <lastmod>2024-07-21T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -128,7 +133,7 @@
   
   <url>
     <loc>https://causti.co/about/</loc>
-    <lastmod>2024-07-21T08:33:25.000Z</lastmod>
+    <lastmod>2024-07-21T18:13:04.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
 </urlset>

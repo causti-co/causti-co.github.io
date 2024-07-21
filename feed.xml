@@ -101,6 +101,20 @@
   </entry>
   <entry>
     <category term="photo" />
+    <title>fumbled it</title>
+    <link href="https://causti.co/photo/015-fumbled-it/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/015-fumbled-it/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/015-fumbled-it-1879w.webp" />
+    <id>https://causti.co/photo/015-fumbled-it/</id>
+    <updated>2024-07-21T00:00:00Z</updated>
+    <published>2024-07-21T00:00:00Z</published>
+    <summary>Looking down the hallway from the interior of a train. At the end of the hallway, a woman has just turned the corner away from you.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/015-fumbled-it-1879w.webp&quot; srcset=&quot;https://causti.co/assets/photo/015-fumbled-it-256w.webp 256w, https://causti.co/assets/photo/015-fumbled-it-880w.webp 880w, https://causti.co/assets/photo/015-fumbled-it-1220w.webp 1220w, https://causti.co/assets/photo/015-fumbled-it-1490w.webp 1490w, https://causti.co/assets/photo/015-fumbled-it-1710w.webp 1710w, https://causti.co/assets/photo/015-fumbled-it-1879w.webp 1879w&quot; sizes=&quot;100vw&quot; width=&quot;1879&quot; height=&quot;2992&quot; alt=&quot;Looking down the hallway from the interior of a train. At the end of the hallway, a woman has just turned the corner away from you.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
+  <entry>
+    <category term="photo" />
     <title>mothra</title>
     <link href="https://causti.co/photo/013-mothra/" />
     <link rel="alternate" type="text/html" href="https://causti.co/photo/013-mothra/" />
@@ -770,35 +784,6 @@
     <content type="html">
       &lt;p&gt;There&#39;s this playlist that I keep open in my browser. It&#39;s been open for at least 10 years. Every time it gets to the end, I go back to the beginning and start listening again.&lt;/p&gt;
 &lt;p&gt;What&#39;s in the playlist? 440+ hours of audio, consisting of every time &lt;a href=&quot;https://en.wikipedia.org/wiki/Patrice_O%27Neal&quot;&gt;Patrice O&#39;Neal&lt;/a&gt; was a guest on &lt;a href=&quot;https://en.wikipedia.org/wiki/Opie_and_Anthony&quot;&gt;The Opie &amp;amp; Anthony radio show&lt;/a&gt;. It&#39;s one thing to listen to a stand-up comedian while they are doing a special, or an interview at a late-night show. But it&#39;s something completely different when you get to listen to them just talk shit with their friends. Sure, now that everybody and their mother has a podcast this is not as unique, but you need to put yourself 20 years back in time, when this stuff was going on (the first episodes with Patrice are from 2002). And this was not just Patrice, but rather the entire &lt;a href=&quot;https://www.comedycellar.com/&quot;&gt;Comedy Cellar&lt;/a&gt; crowd: &lt;a href=&quot;https://www.jimnorton.com/&quot;&gt;Jimmy Norton&lt;/a&gt; (3rd mic on O&amp;amp;A), &lt;a href=&quot;https://robertkellylive.com/&quot;&gt;Bob Kelly&lt;/a&gt;, &lt;a href=&quot;https://www.richvos.com/&quot;&gt;Rich Vos&lt;/a&gt;, &lt;a href=&quot;https://billburr.com/&quot;&gt;Bill Burr&lt;/a&gt;, &lt;a href=&quot;https://www.nickdip.com/&quot;&gt;Nick Di Paolo&lt;/a&gt;, &lt;a href=&quot;https://colinquinn.com/&quot;&gt;Colin Quinn&lt;/a&gt;, &lt;a href=&quot;https://louisck.com/&quot;&gt;Louis CK&lt;/a&gt;.&lt;/p&gt;
-
-    </content>
-  </entry>
-  <entry>
-    <category term="text" />
-    <title>I was hacked!</title>
-    <link href="https://causti.co/text/003-subdomain-takeover/" />
-    <link rel="alternate" type="text/html" href="https://causti.co/text/003-subdomain-takeover/" />
-    <id>https://causti.co/text/003-subdomain-takeover/</id>
-    <updated>2024-04-07T00:00:00Z</updated>
-    <published>2024-04-07T00:00:00Z</published>
-    <summary>i got lazy. i got lucky. and for a few hours, my house had a side-door leading to an online casino. come take a look. the answer will not surprise you.</summary>
-    <content type="html">
-      &lt;p&gt;Today I woke up with an email from the &amp;quot;Google Search Console Team&amp;quot; informing me that a new owner had been added for &lt;code&gt;http://ftp.causti.co/&lt;/code&gt;. &lt;strong&gt;Not cool.&lt;/strong&gt;&lt;/p&gt;
-&lt;h2&gt;WTF!?&lt;/h2&gt;
-&lt;p&gt;First things first: I recognize the subdomain. It was provided by default, configured as a &lt;code&gt;CNAME&lt;/code&gt; record pointing to &lt;code&gt;causti.co&lt;/code&gt;, and I never gave it a second thought. &lt;strong&gt;This will turn out to be my first mistake.&lt;/strong&gt; I immediately assume the worse and go check my DNS access rights and configuration. Everything looks good. No problems with my credentials, and the configuration looks good. I take the hint and enable 2FA, then keep digging.&lt;/p&gt;
-&lt;p&gt;Next I check with the Google Search Console, and after adding this specific URL as a property (which I can do since I own the TLD), I find the user entry created by the attacker. I can also see how they managed to verify ownership of their domain without having access to my DNS: Google lets you perform domain ownership verification by adding a &lt;code&gt;&amp;lt;meta name=&amp;quot;google-site-verification&amp;quot; content=&amp;quot;...&amp;quot; /&amp;gt;&lt;/code&gt; tag with a unique value.&lt;/p&gt;
-&lt;p&gt;With that clue, I check &lt;code&gt;http://ftp.causti.co/&lt;/code&gt; with &lt;code&gt;wget&lt;/code&gt; (maybe I should&#39;ve done this in the first place...) and indeed, the attacker is hosting some scam website from that subdomain, so of course they are able to inject any HTML they want. I can delete their user from the Google Search Console, but they can just keep adding themselves until I fix the issue.&lt;/p&gt;
-&lt;h2&gt;How!?&lt;/h2&gt;
-&lt;p&gt;So the attacker is serving content from one of my subdomains, but they did not compromise my DNS. Let&#39;s dig deeper. This website is hosted in GitHub Pages using an &lt;a href=&quot;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain&quot;&gt;apex domain&lt;/a&gt;. This means &lt;code&gt;causti.co&lt;/code&gt; resolves to an &lt;code&gt;A&lt;/code&gt; record pointing to GitHub IPs. And if &lt;code&gt;ftp.causti.co&lt;/code&gt; resolves to a &lt;code&gt;CNAME&lt;/code&gt; pointing to &lt;code&gt;causti.co&lt;/code&gt;, then it will also resolve to the same GitHub IPs. Indeed, I check the headers of the content coming from &lt;code&gt;http://ftp.causti.co/&lt;/code&gt;, and it&#39;s being served by GitHub.&lt;/p&gt;
-&lt;p&gt;Now at least I understand what is going on. I immediately remove the DNS record for &lt;code&gt;ftp.causti.co&lt;/code&gt;, and confirm there are no other similar unused subdomains that could be taken over in a similar way.&lt;/p&gt;
-&lt;p&gt;Searching for &amp;quot;github pages subdomain takeover&amp;quot; quickly lands me on the &lt;a href=&quot;https://github.com/EdOverflow/can-i-take-over-xyz/issues/68&quot;&gt;can-i-take-over-xyz&lt;/a&gt; repository, discussing this exact kind of takeover. Here&#39;s what caught me off-guard: It seems that there are (at least) two separate domain ownership verification processes for GitHub, and I was foolish enough to assume they were related. They are not.&lt;/p&gt;
-&lt;p&gt;When I first created this website, I created a &lt;a href=&quot;https://github.com/causti-co&quot;&gt;GitHub Organization&lt;/a&gt;, and while setting it up I had to &lt;a href=&quot;https://docs.github.com/en/organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization&quot;&gt;verify ownership&lt;/a&gt; of the &lt;code&gt;causti.co&lt;/code&gt; domain. What I completely missed was the &lt;a href=&quot;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages#verifying-a-domain-for-your-organization-site&quot;&gt;second domain verification process exclusive to GitHub Pages&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;If you don&#39;t do this, any GitHub user can configure their repository to use one of your subdomains as a custom domain for their GitHub Pages, and GitHub will not perform any domain ownership verification.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;It was the combination of both mistakes that made the takeover possible.&lt;/p&gt;
-&lt;h2&gt;Welp&lt;/h2&gt;
-&lt;p&gt;In retrospect, I&#39;d say I got lucky. The attacker was greedy and wanted to get Google Search insights, which triggered the email that warned me something was off. If they hadn&#39;t, then I probably would not have noticed for Lord knows how long.&lt;/p&gt;
-&lt;p&gt;The overall lesson is clear: &lt;em&gt;It&#39;s always DNS&lt;/em&gt;. I &lt;strong&gt;knew&lt;/strong&gt; about that unused subdomain, I just falsely assumed it to be innocuous. I&#39;ll not be making that mistake in the future again.&lt;/p&gt;
-&lt;p&gt;As for GitHub, I&#39;m still honestly surprised there&#39;s domain ownership verification by default when setting up a custom domain for GitHub Pages. That would be the definitive way to keep this from ever happening again. But until they take any actions, it&#39;s on ourselves to keep our stuff in order.&lt;/p&gt;
 
     </content>
   </entry>
