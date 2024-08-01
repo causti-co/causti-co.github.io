@@ -5,7 +5,7 @@
   <link href="https://causti.cotext/feed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-07-21T00:00:00Z</updated>
+  <updated>2024-08-01T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
@@ -13,6 +13,26 @@
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <category term="text" />
+  <entry>
+    <title>Relative money</title>
+    <link href="https://causti.co/text/008-relative-money/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/text/008-relative-money/" />
+    <id>https://causti.co/text/008-relative-money/</id>
+    <updated>2024-08-01T00:00:00Z</updated>
+    <published>2024-08-01T00:00:00Z</published>
+    <summary>how much is money worth to you? what about others? how do you think about it? let&#39;s talk.</summary>
+    <content type="html">
+      &lt;p&gt;I want to start talking about money. I think a lot of people have an absolutely unhealthy relationship with money, in a way that taints all of their social interactions, their perception of themselves and others, the way they establish relationships, etc.&lt;/p&gt;
+&lt;p&gt;I also want to try something different, and rather than go for a more big-bang approach, try writing small snippets as I feel like it, and eventually re-edit them into an article, or make it a series. Anyway, let&#39;s start with something very simple. So simple that maybe most of you&#39;ve already thought of it. But I have to start somewhere.&lt;/p&gt;
+&lt;h1&gt;How much is a million dollars, really?&lt;/h1&gt;
+&lt;p&gt;That&#39;s the question that I want to answer. Or better said, I want to help you develop an instinct, so you can come up with an answer on your own. And the idea is very simple: start with the instincts you already have, and figure out the scaling factor.&lt;/p&gt;
+&lt;p&gt;So, let&#39;s think about your instincts for a moment, by starting from the other extreme. Let&#39;s imagine you want to buy an item, and it costs $0.01. Do you need to think about this expense? Absolutely not. You can get 10 of it. Hell, you can buy 100 of them, and you still don&#39;t have to think about this expense. Let&#39;s bump it by one order of magnitude and try again. What about a $1 item. Do you need to think about this expense, or can you just get it? What about $10? $100? $1.000? $10.000?&lt;/p&gt;
+&lt;p&gt;Now, please pay attention to what I&#39;m asking you to do here. I don&#39;t want to know if you can &lt;em&gt;afford&lt;/em&gt; the item. I want to know what&#39;s the highest it can cost, so that you can still buy it &lt;strong&gt;without having to think about how little money you&#39;re spending&lt;/strong&gt;. I don&#39;t know your financial situation, but I&#39;d expect this number to be in the $10 to $1.000 range. If you want another way of looking at it: What is the highest denomination bill you would feel comfortable &lt;em&gt;making it rain&lt;/em&gt;, without having to worry about how much money you&#39;d have left in your bank account the next morning.&lt;/p&gt;
+&lt;p&gt;Once you&#39;ve found that value, make a two-column table, and write that value down in the first row. Write your current income next to it. On each subsequent row, multiply both numbers by 10. Eventually you&#39;ll get to $100.000, $1.000.000 and higher. And next to it, you&#39;ll have a reference income value. The conclusion should now be obvious: If you were making as much money as the number next to $1.000.000, &lt;strong&gt;you&#39;d be able to spend $1.000.000 without having to think about how little money you&#39;re spending&lt;/strong&gt;. That&#39;s the instinct.&lt;/p&gt;
+&lt;p&gt;If you want, you can extend this concept a bit by adding a few categories more: &amp;quot;Don&#39;t have to think about it&amp;quot;, &amp;quot;Only once per month&amp;quot;, &amp;quot;Only once per year&amp;quot;, etc. Always sticking to whole order-of-magnitude values. Then see which income would give you this same &lt;em&gt;feeling&lt;/em&gt; for $1.000.000, or whichever figure you&#39;re curious about.&lt;/p&gt;
+
+    </content>
+  </entry>
   <entry>
     <title>Thinking about thinking</title>
     <link href="https://causti.co/text/007-thinking-about-thinking/" />
