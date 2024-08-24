@@ -5,13 +5,41 @@
   <link href="https://causti.cofeed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-08-01T00:00:00Z</updated>
+  <updated>2024-08-11T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
   <generator>Eleventy v2.0.1</generator>
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
+  <entry>
+    <category term="sound" />
+    <title>Industrial cat</title>
+    <link href="https://causti.co/sound/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/sound/" />
+    <link rel="alternate" type="audio/mpeg" href="https://causti.co/assets/sound/003-industrial-cat.mp3" />
+    <id>https://causti.co/sound/</id>
+    <updated>2024-08-11T00:00:00Z</updated>
+    <published>2024-08-11T00:00:00Z</published>
+    <summary>Industrial cat</summary>
+    <content type="html">
+      
+    </content>
+  </entry>
+  <entry>
+    <category term="sound" />
+    <title>It&#39;s fucking windy in here</title>
+    <link href="https://causti.co/sound/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/sound/" />
+    <link rel="alternate" type="audio/mpeg" href="https://causti.co/assets/sound/002-its-fucking-windy-in-here.mp3" />
+    <id>https://causti.co/sound/</id>
+    <updated>2024-08-06T00:00:00Z</updated>
+    <published>2024-08-06T00:00:00Z</published>
+    <summary>It&#39;s fucking windy in here</summary>
+    <content type="html">
+      
+    </content>
+  </entry>
   <entry>
     <category term="text" />
     <title>Relative money</title>
@@ -45,6 +73,20 @@
     <summary>A hallway leading into a building, covered in tiles, with some tiles replaced by mirrors.</summary>
     <content type="html">
       &lt;img src=&quot;https://causti.co/assets/photo/017-rockstar-3089w.webp&quot; srcset=&quot;https://causti.co/assets/photo/017-rockstar-256w.webp 256w, https://causti.co/assets/photo/017-rockstar-880w.webp 880w, https://causti.co/assets/photo/017-rockstar-1220w.webp 1220w, https://causti.co/assets/photo/017-rockstar-1490w.webp 1490w, https://causti.co/assets/photo/017-rockstar-1710w.webp 1710w, https://causti.co/assets/photo/017-rockstar-1905w.webp 1905w, https://causti.co/assets/photo/017-rockstar-2048w.webp 2048w, https://causti.co/assets/photo/017-rockstar-3089w.webp 3089w&quot; sizes=&quot;100vw&quot; width=&quot;3089&quot; height=&quot;2048&quot; alt=&quot;A hallway leading into a building, covered in tiles, with some tiles replaced by mirrors.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
+  <entry>
+    <category term="sound" />
+    <title>Homicidio del solitario</title>
+    <link href="https://causti.co/sound/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/sound/" />
+    <link rel="alternate" type="audio/mpeg" href="https://causti.co/assets/sound/001-homicidio-del-solitario.mp3" />
+    <id>https://causti.co/sound/</id>
+    <updated>2024-07-28T00:00:00Z</updated>
+    <published>2024-07-28T00:00:00Z</published>
+    <summary>Homicidio del solitario</summary>
+    <content type="html">
+      
     </content>
   </entry>
   <entry>
@@ -728,48 +770,6 @@
     <summary>A dark, empty room. To the left, light pours in from an adjacent hallway. The top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.</summary>
     <content type="html">
       &lt;img src=&quot;https://causti.co/assets/photo/008-sala-nueve-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/008-sala-nueve-256w.webp 256w, https://causti.co/assets/photo/008-sala-nueve-880w.webp 880w, https://causti.co/assets/photo/008-sala-nueve-1220w.webp 1220w, https://causti.co/assets/photo/008-sala-nueve-1490w.webp 1490w, https://causti.co/assets/photo/008-sala-nueve-1710w.webp 1710w, https://causti.co/assets/photo/008-sala-nueve-1905w.webp 1905w, https://causti.co/assets/photo/008-sala-nueve-2048w.webp 2048w, https://causti.co/assets/photo/008-sala-nueve-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;A dark, empty room. To the left, light pours in from an adjacent hallway. The top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
-    </content>
-  </entry>
-  <entry>
-    <category term="photo" />
-    <title>tengo calor</title>
-    <link href="https://causti.co/photo/007-tengo-calor/" />
-    <link rel="alternate" type="text/html" href="https://causti.co/photo/007-tengo-calor/" />
-    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/007-tengo-calor-3089w.webp" />
-    <id>https://causti.co/photo/007-tengo-calor/</id>
-    <updated>2024-04-17T00:00:00Z</updated>
-    <published>2024-04-17T00:00:00Z</published>
-    <summary>A black and white photo of the inside of a bus. Two kids are sitting down, with a lady tending to one of them while the second kid is sliding the bus window open.</summary>
-    <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/007-tengo-calor-3089w.webp&quot; srcset=&quot;https://causti.co/assets/photo/007-tengo-calor-256w.webp 256w, https://causti.co/assets/photo/007-tengo-calor-880w.webp 880w, https://causti.co/assets/photo/007-tengo-calor-1220w.webp 1220w, https://causti.co/assets/photo/007-tengo-calor-1490w.webp 1490w, https://causti.co/assets/photo/007-tengo-calor-1710w.webp 1710w, https://causti.co/assets/photo/007-tengo-calor-1905w.webp 1905w, https://causti.co/assets/photo/007-tengo-calor-2048w.webp 2048w, https://causti.co/assets/photo/007-tengo-calor-3089w.webp 3089w&quot; sizes=&quot;100vw&quot; width=&quot;3089&quot; height=&quot;2048&quot; alt=&quot;A black and white photo of the inside of a bus. Two kids are sitting down, with a lady tending to one of them while the second kid is sliding the bus window open.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
-    </content>
-  </entry>
-  <entry>
-    <category term="photo" />
-    <title>esquinas eran las de antes</title>
-    <link href="https://causti.co/photo/006-esquinas-eran-las-de-antes/" />
-    <link rel="alternate" type="text/html" href="https://causti.co/photo/006-esquinas-eran-las-de-antes/" />
-    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-3042w.webp" />
-    <id>https://causti.co/photo/006-esquinas-eran-las-de-antes/</id>
-    <updated>2024-04-16T00:00:00Z</updated>
-    <published>2024-04-16T00:00:00Z</published>
-    <summary>A black and white photo of a traditional street corner in Buenos Aires. There&#39;s a store directly in the corner, but it&#39;s unclear if it&#39;s still in business, and the walls are covered in grafitti tags.</summary>
-    <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-3042w.webp&quot; srcset=&quot;https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-256w.webp 256w, https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-880w.webp 880w, https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-1220w.webp 1220w, https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-1490w.webp 1490w, https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-1710w.webp 1710w, https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-1905w.webp 1905w, https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-2048w.webp 2048w, https://causti.co/assets/photo/006-esquinas-eran-las-de-antes-3042w.webp 3042w&quot; sizes=&quot;100vw&quot; width=&quot;3042&quot; height=&quot;1986&quot; alt=&quot;A black and white photo of a traditional street corner in Buenos Aires. There&#39;s a store directly in the corner, but it&#39;s unclear if it&#39;s still in business, and the walls are covered in grafitti tags.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
-    </content>
-  </entry>
-  <entry>
-    <category term="photo" />
-    <title>cuando sea grande; cuando ya no este muerto</title>
-    <link href="https://causti.co/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto/" />
-    <link rel="alternate" type="text/html" href="https://causti.co/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto/" />
-    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-4272w.webp" />
-    <id>https://causti.co/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto/</id>
-    <updated>2024-04-15T00:00:00Z</updated>
-    <published>2024-04-15T00:00:00Z</published>
-    <summary>A photo of multiple empty bodies of what appear to be ATMs. All electronics have been removed, and the bodies lie standing next to eachother in the corner of a yellow room.</summary>
-    <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-256w.webp 256w, https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-880w.webp 880w, https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-1220w.webp 1220w, https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-1490w.webp 1490w, https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-1710w.webp 1710w, https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-1905w.webp 1905w, https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-2048w.webp 2048w, https://causti.co/assets/photo/005-cuando-sea-grande-cuando-ya-no-este-muerto-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;A photo of multiple empty bodies of what appear to be ATMs. All electronics have been removed, and the bodies lie standing next to eachother in the corner of a yellow room.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
     </content>
   </entry>
 </feed>
