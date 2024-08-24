@@ -5,13 +5,27 @@
   <link href="https://causti.cofeed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-08-11T00:00:00Z</updated>
+  <updated>2024-08-25T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
   <generator>Eleventy v2.0.1</generator>
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
+  <entry>
+    <category term="photo" />
+    <title>gaben</title>
+    <link href="https://causti.co/photo/018-gaben/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/018-gaben/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/018-gaben-2321w.webp" />
+    <id>https://causti.co/photo/018-gaben/</id>
+    <updated>2024-08-25T00:00:00Z</updated>
+    <published>2024-08-25T00:00:00Z</published>
+    <summary>The outside of a power plant. The power plant building covers the entire background, with various steaming large pipes in the foreground.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/018-gaben-2321w.webp&quot; srcset=&quot;https://causti.co/assets/photo/018-gaben-256w.webp 256w, https://causti.co/assets/photo/018-gaben-880w.webp 880w, https://causti.co/assets/photo/018-gaben-1220w.webp 1220w, https://causti.co/assets/photo/018-gaben-1490w.webp 1490w, https://causti.co/assets/photo/018-gaben-1710w.webp 1710w, https://causti.co/assets/photo/018-gaben-1905w.webp 1905w, https://causti.co/assets/photo/018-gaben-2048w.webp 2048w, https://causti.co/assets/photo/018-gaben-2321w.webp 2321w&quot; sizes=&quot;100vw&quot; width=&quot;2321&quot; height=&quot;2321&quot; alt=&quot;The outside of a power plant. The power plant building covers the entire background, with various steaming large pipes in the foreground.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
   <entry>
     <category term="sound" />
     <title>Industrial cat</title>
@@ -756,20 +770,6 @@
       &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/I.Sat&quot;&gt;We had good cable in Argentina&lt;/a&gt;. My theory is that this was mostly economy-driven: We got anime because it was cheaper to license these strange cartoons from Japan that nobody knew about, than the hits from the US. And it was the same with comedy, we got a lot of British shows that nobody had heard about.&lt;/p&gt;
 &lt;p&gt;Peep Show was one of them. I won&#39;t try to describe the show, you need to go and watch it, and I&#39;ve linked the first season which someone uploaded to &lt;a href=&quot;https://archive.org/&quot;&gt;The Internet Archive&lt;/a&gt;. Ok, ok, I&#39;ll try to describe it, but I&#39;ll keep it very short and simple: &lt;a href=&quot;https://www.youtube.com/watch?v=vRBsaJPkt2Q&quot;&gt;Cringe&lt;/a&gt;. You&#39;re not supposed to know what goes on inside the minds of this kind of people, but you do, and you&#39;re forced to on the ride with them. This was also my first contact with &lt;a href=&quot;https://en.wikipedia.org/wiki/David_Mitchell_(comedian)&quot;&gt;David Mitchell&lt;/a&gt;. He&#39;s, unsurprisingly, my kind of person.&lt;/p&gt;
 
-    </content>
-  </entry>
-  <entry>
-    <category term="photo" />
-    <title>sala nueve</title>
-    <link href="https://causti.co/photo/008-sala-nueve/" />
-    <link rel="alternate" type="text/html" href="https://causti.co/photo/008-sala-nueve/" />
-    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/008-sala-nueve-4272w.webp" />
-    <id>https://causti.co/photo/008-sala-nueve/</id>
-    <updated>2024-04-18T00:00:00Z</updated>
-    <published>2024-04-18T00:00:00Z</published>
-    <summary>A dark, empty room. To the left, light pours in from an adjacent hallway. The top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.</summary>
-    <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/photo/008-sala-nueve-4272w.webp&quot; srcset=&quot;https://causti.co/assets/photo/008-sala-nueve-256w.webp 256w, https://causti.co/assets/photo/008-sala-nueve-880w.webp 880w, https://causti.co/assets/photo/008-sala-nueve-1220w.webp 1220w, https://causti.co/assets/photo/008-sala-nueve-1490w.webp 1490w, https://causti.co/assets/photo/008-sala-nueve-1710w.webp 1710w, https://causti.co/assets/photo/008-sala-nueve-1905w.webp 1905w, https://causti.co/assets/photo/008-sala-nueve-2048w.webp 2048w, https://causti.co/assets/photo/008-sala-nueve-4272w.webp 4272w&quot; sizes=&quot;100vw&quot; width=&quot;4272&quot; height=&quot;2848&quot; alt=&quot;A dark, empty room. To the left, light pours in from an adjacent hallway. The top of the passageway between the room and the hallway is shaped like a triangle, casting a mirror image of light against the back wall of the dark room.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
     </content>
   </entry>
 </feed>

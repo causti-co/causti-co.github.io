@@ -5,7 +5,7 @@
   <link href="https://causti.cophoto/feed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-08-01T00:00:00Z</updated>
+  <updated>2024-08-25T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
@@ -13,6 +13,19 @@
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <category term="photo" />
+  <entry>
+    <title>gaben</title>
+    <link href="https://causti.co/photo/018-gaben/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/018-gaben/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/018-gaben-2321w.webp" />
+    <id>https://causti.co/photo/018-gaben/</id>
+    <updated>2024-08-25T00:00:00Z</updated>
+    <published>2024-08-25T00:00:00Z</published>
+    <summary>The outside of a power plant. The power plant building covers the entire background, with various steaming large pipes in the foreground.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/018-gaben-2321w.webp&quot; srcset=&quot;https://causti.co/assets/photo/018-gaben-256w.webp 256w, https://causti.co/assets/photo/018-gaben-880w.webp 880w, https://causti.co/assets/photo/018-gaben-1220w.webp 1220w, https://causti.co/assets/photo/018-gaben-1490w.webp 1490w, https://causti.co/assets/photo/018-gaben-1710w.webp 1710w, https://causti.co/assets/photo/018-gaben-1905w.webp 1905w, https://causti.co/assets/photo/018-gaben-2048w.webp 2048w, https://causti.co/assets/photo/018-gaben-2321w.webp 2321w&quot; sizes=&quot;100vw&quot; width=&quot;2321&quot; height=&quot;2321&quot; alt=&quot;The outside of a power plant. The power plant building covers the entire background, with various steaming large pipes in the foreground.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
   <entry>
     <title>rockstar</title>
     <link href="https://causti.co/photo/017-rockstar/" />
