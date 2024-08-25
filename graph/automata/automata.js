@@ -6,8 +6,12 @@ const $input = document.getElementById("code-input");
 const $output = document.getElementById("code-output");
 const $render = document.getElementById("render");
 const $renderStatus = document.getElementById("render-status");
-const $canvasParent = document.getElementById("graph-output");
+const $outputContainer = document.getElementById("graph-output");
+const $canvasContainer = document.getElementById("canvas-container");
 const $share = document.getElementById("share");
+const $inputSection = document.getElementById("graph-input");
+const $inputLabel = document.querySelector("#graph-input > h2");
+const $outputLabel = document.querySelector("#graph-output > h2");
 
 async function update() {
   let code = $input.value;
@@ -37,13 +41,16 @@ let p5instance;
 function render() {
   $render.blur();
 
+  const computedStyle = getComputedStyle($outputContainer);
+  const clientWidth = $outputContainer.clientWidth;
+  const clientHeight = $outputContainer.clientHeight - 24;
   const code = $input.value;
-  const sketch = new Function("p", `"use strict";${code};`);
+  const sketch = new Function("p", `"use strict";const clientWidth=${clientWidth};const clientHeight=${clientHeight};${code};`);
 
   $renderStatus.innerHTML = "";
 
   if (p5instance) p5instance.remove();
-  p5instance = new p5(sketch, $canvasParent);
+  p5instance = new p5(sketch, $canvasContainer);
 
   $renderStatus.innerHTML = ";; success";
 }
@@ -65,8 +72,6 @@ function loadFromURL() {
 
     $input.value = LZString.decompressFromEncodedURIComponent(lzCode);
 
-    render();
-
     $renderStatus.innerHTML = ";; loaded code from clipboard";
   }
 }
@@ -81,12 +86,24 @@ function share() {
   $renderStatus.innerHTML = ";; url copied to clipboard";
 }
 
+function downloadPNG() {
+  p5instance.saveCanvas("output", "png");
+}
+
+function toggleInput() {
+  $inputSection.classList.toggle("closed");
+  render();
+}
+
 $input.addEventListener("input", update);
 $input.addEventListener("scroll", syncScroll);
 $render.addEventListener("click", render);
 $share.addEventListener("click", share);
+$inputLabel.addEventListener("click", toggleInput);
+$outputLabel.addEventListener("click", downloadPNG); // Surprise!
 window.addEventListener("unhandledrejection", error);
 window.addEventListener("error", error);
 
 loadFromURL();
 update();
+render();

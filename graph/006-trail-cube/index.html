@@ -2,112 +2,93 @@
 <html lang="en">
   <head prefix="og: https://ogp.me/ns#">
     <meta charset="utf-8" />
-    <title>causti • co — automata editor</title>
+    <title>causti • co — trail cube</title>
     <link rel="stylesheet" href="/assets/styles/automata.css" />
     <link rel="icon" href="/assets/icons/favicon.png" sizes="48x48" />
     <link rel="icon" href="/assets/icons/favicon.svg" sizes="any" />
-    <link rel="canonical" href="https://causti.co/graph/automata/" />
+    <link rel="canonical" href="https://causti.co/graph/006-trail-cube/" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="author" content="Martín Valdés de León" />
     <meta name="generator" content="Eleventy v2.0.1" />
     <meta name="description" content="automata editor" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <meta property="og:site_name" content="causti • co" />
-    <meta property="og:title" content="automata editor" />
+    <meta property="og:title" content="trail cube" />
     <meta property="og:description" content="automata editor" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://causti.co/graph/automata/" /><meta property="og:image" content="https://causti.co/assets/graph/016-reaction-diffusion-shader.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://causti.co/graph/006-trail-cube/" /><meta property="og:image" content="https://causti.co/assets/graph/006-trail-cube.png" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="922" />
-    <meta property="og:image:height" content="922" />
-    <meta property="og:image:alt" content="reaction diffusion shader" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="trail cube" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@mvaldesdeleon" />
     <meta name="twitter:creator" content="@mvaldesdeleon" />
+    <meta name="article:published_time" content="2024-08-25T00:00:00.000Z" />
+    <meta name="article:author" content="Martín Valdés de León" />
   </head>
   <body>
     <header>
-      <h1><a href="/graph/automata/" tabindex="-1">causti </a><a href="/graph/automata/" tabindex="-1"><img class="dot" src="/assets/images/causti.co.pink.svg" alt="·" width="640" height="640" /></a><a href="/graph/automata/" tabindex="-1"> co</a></h1>
+      <h1><a href="/graph/" tabindex="-1">causti </a><a href="/graph/" tabindex="-1"><img class="dot" src="/assets/images/causti.co.pink.svg" alt="·" width="640" height="640" /></a><a href="/graph/" tabindex="-1"> co</a></h1>
     </header>
     <main>
       <article>
-        <section id="graph-input">
+        <section id="graph-input" class="closed">
           <h2>input</h2>
           <div class="code-editor">
             <div id="code-output"></div>
             <textarea spellcheck="false" id="code-input">
-// Press "render", then click to toggle cells,
-// and double-click to start/stop the simulation
+const NOISE_SPEED = 0.005;
+const ANGULAR_SPEED = 0.05;
+const HUE_SPEED = 2;
 
-const CANVAS_SIZE = 512;
+let canvas;
+let buffer3d;
+let camera;
 
-const SPACE_SIZE = 64;
-const CELL_SIZE = CANVAS_SIZE / SPACE_SIZE;
-
-const mappedArray = (s, f) => Array.from(Array(s), f);
-const filledArray = (s, v) => Array(s).fill(v);
-const clone = o => JSON.parse(JSON.stringify(o));
-
-let running = false;
-let space = mappedArray(SPACE_SIZE, () => filledArray(SPACE_SIZE, 0));
-
-let snapshotAccess = (space) => {
-  space = clone(space);
-
-  const safe = (i, j) => {
-    i = (i + SPACE_SIZE) % SPACE_SIZE;
-    j = (j + SPACE_SIZE) % SPACE_SIZE;
-    return space[i][j];
-  }
-
-  return (i, j) => safe(i - 1, j - 1) + safe(i - 1, j) + safe(i - 1, j + 1) + safe(i, j - 1) + safe(i, j + 1) + safe(i + 1, j - 1) + safe(i + 1, j) + safe(i + 1, j + 1);
-}
+let noiseSeed;
+let angle;
+let hue;
 
 p.setup = () => {
-  p.createCanvas(CANVAS_SIZE, CANVAS_SIZE);
-  p.fill('hotpink');
-  p.stroke('black');
-  p.frameRate(10);
-}
+  canvas = p.createCanvas(clientWidth, clientHeight, p.WEBGL);
+  canvas.background(0);
 
-p.mousePressed = () => {
-  if (0 <= p.mouseX && p.mouseX <= CANVAS_SIZE && 0 <= p.mouseY && p.mouseY <= CANVAS_SIZE) {
-    let i = Math.floor(p.mouseX / CELL_SIZE);
-    let j = Math.floor(p.mouseY / CELL_SIZE);
+  buffer3d = p.createFramebuffer();
+  buffer3d.begin();
+  camera = buffer3d.createCamera();
+  camera.setPosition(400, 0, 800);
+  camera.lookAt(0, 0, 0);
+  buffer3d.end();
 
-    space[i][j] = Math.abs(space[i][j] - 1);
-  }
-}
+  p.frameRate(60);
+  p.colorMode(p.HSB, 360, 100, 100);
 
-p.doubleClicked = () => {
-  running = !running;
+  noiseSeed = p.random(-1000, 1000);
+  angle = p.random() * p.TAU;
+  hue = Math.floor(p.random() * 360);
 }
 
 p.draw = () => {
-  if (running) {
-    const neighbors = snapshotAccess(space);
+  angle += ANGULAR_SPEED * p.noise(noiseSeed, p.frameCount * NOISE_SPEED) - ANGULAR_SPEED/2;
+  hue = (hue + HUE_SPEED) % 360;
 
-    for (let i = 0; i < SPACE_SIZE; i++) {
-      for (let j = 0; j < SPACE_SIZE; j++) {
-        let count = neighbors(i, j);
-        
-        if (space[i][j] === 1 && count !== 2 && count !== 3) {
-          space[i][j] = 0;
-        } else if (space[i][j] === 0 && count === 3) {
-          space[i][j] = 1;
-        }
-      }
-    }
-  }
-
+  buffer3d.begin();
+  p.setCamera(camera);
+  p.resetMatrix();
+  p.fill(hue, 100, 100);
+  p.stroke("black");
   p.clear();
-  for (let i = 0; i < SPACE_SIZE; i++) {
-    for (let j = 0; j < SPACE_SIZE; j++) {
-      if (space[i][j] === 1) {
-        p.square(i * CELL_SIZE, j * CELL_SIZE, CELL_SIZE);
-      }
-    }
-  }
+  p.push();
+  p.rotateX(p.frameCount * 0.05);
+  p.box(128);
+  p.pop();
+  p.orbitControl();
+  buffer3d.end();
+
+  let v = p5.Vector.fromAngle(angle, 8);
+  p.copy(canvas, v.x, v.y, clientWidth, clientHeight, -clientWidth/2, -clientHeight/2, clientWidth, clientHeight);
+  p.image(buffer3d, -clientWidth/2, -clientHeight/2, clientWidth, clientHeight);
 }</textarea>
           </div>
           <div class="buttons">

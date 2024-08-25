@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <title>causti • co — shader life</title>
+    <link rel="stylesheet" href="/assets/styles/automata.css" />
+    <link rel="icon" href="/assets/icons/favicon.png" sizes="48x48" />
+    <link rel="icon" href="/assets/icons/favicon.svg" sizes="any" />
+    <link rel="canonical" href="https://causti.co/graph/015-shader-life/" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="author" content="Martín Valdés de León" />
+    <meta name="generator" content="Eleventy v2.0.1" />
+    <meta name="description" content="automata editor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta property="og:site_name" content="causti • co" />
+    <meta property="og:title" content="shader life" />
+    <meta property="og:description" content="automata editor" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://causti.co/graph/015-shader-life/" /><meta property="og:image" content="https://causti.co/assets/graph/015-shader-life.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="918" />
+    <meta property="og:image:height" content="918" />
+    <meta property="og:image:alt" content="shader life" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mvaldesdeleon" />
+    <meta name="twitter:creator" content="@mvaldesdeleon" />
+    <meta name="article:published_time" content="2024-08-25T00:00:00.000Z" />
+    <meta name="article:author" content="Martín Valdés de León" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/graph/" tabindex="-1">causti </a><a href="/graph/" tabindex="-1"><img class="dot" src="/assets/images/causti.co.pink.svg" alt="·" width="640" height="640" /></a><a href="/graph/" tabindex="-1"> co</a></h1>
+    </header>
+    <main>
+      <article>
+        <section id="graph-input" class="closed">
+          <h2>input</h2>
+          <div class="code-editor">
+            <div id="code-output"></div>
+            <textarea spellcheck="false" id="code-input">
+let conwayShader, renderShader;
+let bufferA, bufferB;
+let mic, fft;
+
+let conwayVert = `
+precision highp float;
+
+attribute vec3 aPosition;
+attribute vec2 aTexCoord;
+attribute vec4 aVertexColor;
+
+uniform mat4 uModelViewMatrix;
+uniform mat4 uProjectionMatrix;
+
+varying vec2 vTexCoord;
+varying vec4 vVertexColor;
+
+void main() {
+  vec4 viewModelPosition = uModelViewMatrix * vec4(aPosition, 1.0);
+  gl_Position = uProjectionMatrix * viewModelPosition;
+
+  vVertexColor = aVertexColor;
+  vTexCoord = aTexCoord;
+}`;
+let conwayFrag = `
+precision highp float;
+
+varying vec2 vTexCoord;
+
+uniform vec2 uTextureScale;
+uniform sampler2D uBufferTexture;
+uniform float uFrameCount;
+
+// Safely reads data from the texture at the given coords
+int read(vec2 coords) {
+  // Wrap around by keeping the fractional part only
+  vec2 safeCoords = fract(coords);
+  vec4 raw = texture2D(uBufferTexture, safeCoords);
+
+  // Red is life
+  if (raw.r == 1.0) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+// Adds a screen-space offset to the texture-space coordinates
+vec2 offset(vec2 xy) {
+  // GLSL is nice sometimes
+  return vTexCoord + xy * uTextureScale;
+}
+
+void main() {
+  int self = read(vTexCoord);
+  int neighbors = read(offset(vec2(-1.0, -1.0))) +
+    read(offset(vec2(0.0, -1.0))) +
+    read(offset(vec2(1.0, -1.0))) +
+    read(offset(vec2(-1.0, 0.0))) +
+    read(offset(vec2(1.0, 0.0))) +
+    read(offset(vec2(-1.0, 1.0))) + 
+    read(offset(vec2(0.0, 1.0))) +
+    read(offset(vec2(1.0, 1.0)));
+
+  // https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules
+  if (self == 1 && neighbors != 2 && neighbors != 3) {
+    self = 0;
+  } else if (self == 0 && neighbors == 3) {
+    self = 1;
+  }
+
+  if (self == 1) {
+    // Red is life, Green is age
+    vec4 raw = texture2D(uBufferTexture, vTexCoord);
+    gl_FragColor = vec4(1.0, raw.g + 0.01 + fract(uFrameCount * 0.01), 0.0, 1.0);
+  } else {
+    gl_FragColor = vec4(vec3(0.0), 1.0);
+  }
+}`;
+let renderFrag = `
+precision highp float;
+
+varying vec2 vTexCoord;
+
+uniform sampler2D uBufferTexture;
+
+vec2 read(vec2 coords) {
+  vec2 safeCoords = fract(coords);
+  vec4 raw = texture2D(uBufferTexture, safeCoords);
+
+  return raw.rg;
+}
+
+vec3 hsb2rgb(vec3 c) {
+  vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+  vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
+  return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+}
+
+void main() {
+  vec2 self = read(vTexCoord);
+
+  if (self.r == 1.0) {
+    vec3 hsb = vec3(fract(0.917 + self.g), 0.59, 1.0);
+    gl_FragColor = vec4(hsb2rgb(hsb), 1.0);
+  } else {
+    gl_FragColor = vec4(vec3(0.0), 1.0);
+  }
+}
+`;
+
+p.preload = () => {
+  conwayShader = p.createShader(conwayVert, conwayFrag);
+  renderShader = p.createShader(conwayVert, renderFrag);
+}
+
+p.setup = () => {
+  p.createCanvas(clientWidth, clientHeight, p.WEBGL);
+  p.setFrameRate(60);
+  p.pixelDensity(1);
+  p.noSmooth();
+  p.noStroke();
+  
+  mic = new p5.AudioIn();
+  mic.start();
+  fft = new p5.FFT();
+  fft.setInput(mic);
+
+  let bufferOptions = {
+    antialias: false,
+    textureFiltering: p.NEAREST
+  };
+  bufferA = p.createFramebuffer(bufferOptions);
+  bufferB = p.createFramebuffer(bufferOptions);
+
+  p.shader(conwayShader);
+  conwayShader.setUniform('uTextureScale', [1.0 / p.width, 1.0 / p.height]);
+  p.resetShader();
+}
+
+p.draw = () => {
+  let waveform = fft.waveform();
+  
+  // Set additional data into bufferA if needed
+  bufferA.begin();
+  p.stroke(255, 0, 0, 255);
+  //p.strokeWeight(2);
+  p.noFill();
+  p.beginShape();
+  for (let i = 0; i < waveform.length; i++){
+    let x = p.map(i, 0, waveform.length, -p.width/2, p.width/2);
+    let y = p.map(waveform[i], -1, 1, -p.height/2, p.height/2);
+    p.vertex(x,y);
+  }
+  p.endShape();
+  bufferA.end();
+  // Render into bufferB using bufferA as texture
+  bufferB.begin();
+  p.shader(conwayShader);
+  conwayShader.setUniform('uBufferTexture', bufferA.color);
+  conwayShader.setUniform('uFrameCount', p.frameCount);
+  // Update the entire buffer
+  p.plane(p.width, p.height);
+  bufferB.end();
+
+  // Render bufferB into the canvas
+  p.shader(renderShader);
+  renderShader.setUniform('uBufferTexture', bufferB.color);
+  p.plane(p.width, p.height);
+  
+  // Swap buffers
+  [bufferA, bufferB] = [bufferB, bufferA];
+}</textarea>
+          </div>
+          <div class="buttons">
+            <div id="render-status"></div>
+            <button id="share">share ↗</button>
+            <button id="render">render</button>
+          </div>
+        </section>
+        <section id="graph-output">
+          <h2>output</h2>
+          <div id="canvas-container"></div>
+        </section>
+      </article>
+      <script type="module" src="/graph/automata/p5.min.js"></script>
+      <script type="module" src="/graph/automata/p5.sound.min.js"></script>
+      <script type="module" src="/graph/automata/lz-string.min.js"></script>
+      <script type="module" src="/graph/automata/automata.js"></script>
+    </main>
+    <footer>
+      <div class="content">
+        <p class="cc" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+          <a property="dct:title" rel="cc:attributionURL" href="https://causti.co/">causti • co</a> © 2024 by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://twitter.com/mvaldesdeleon">Martín Valdés de León</a>, is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<span class="icons"><img class="icon" src="/assets/images/cc/cc.pink.svg" alt="CC" width="64" height="64" /><img class="icon" src="/assets/images/cc/by.pink.svg" alt="BY" width="64" height="64" /><img class="icon" src="/assets/images/cc/nc.pink.svg" alt="NC" width="64" height="64" /><img class="icon" src="/assets/images/cc/nd.pink.svg" alt="ND" width="64" height="64" /></span><span class="alt-icons"><img class="icon" src="/assets/images/cc/cc.svg" alt="CC" width="64" height="64" /><img class="icon" src="/assets/images/cc/by.svg" alt="BY" width="64" height="64" /><img class="icon" src="/assets/images/cc/nc.svg" alt="NC" width="64" height="64" /><img class="icon" src="/assets/images/cc/nd.svg" alt="ND" width="64" height="64" /></span></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
