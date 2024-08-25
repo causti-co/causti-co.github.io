@@ -2,21 +2,21 @@
 <html lang="en">
   <head prefix="og: https://ogp.me/ns#">
     <meta charset="utf-8" />
-    <title>causti • co — graph editor</title>
+    <title>causti • co — stripes 3</title>
     <link rel="stylesheet" href="/assets/styles/editor.css" />
     <link rel="icon" href="/assets/icons/favicon.png" sizes="48x48" />
     <link rel="icon" href="/assets/icons/favicon.svg" sizes="any" />
-    <link rel="canonical" href="https://causti.co/graph/editor/" />
+    <link rel="canonical" href="https://causti.co/graph/005-stripes-3/" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="author" content="Martín Valdés de León" />
     <meta name="generator" content="Eleventy v2.0.1" />
     <meta name="description" content="graph editor" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <meta property="og:site_name" content="causti • co" />
-    <meta property="og:title" content="graph editor" />
+    <meta property="og:title" content="stripes 3" />
     <meta property="og:description" content="graph editor" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://causti.co/graph/editor/" /><meta property="og:image" content="https://causti.co/assets/graph/005-stripes-3.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://causti.co/graph/005-stripes-3/" /><meta property="og:image" content="https://causti.co/assets/graph/005-stripes-3.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
@@ -24,10 +24,12 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@mvaldesdeleon" />
     <meta name="twitter:creator" content="@mvaldesdeleon" />
+    <meta name="article:published_time" content="2024-08-25T00:00:00.000Z" />
+    <meta name="article:author" content="Martín Valdés de León" />
   </head>
   <body>
     <header>
-      <h1><a href="/graph/editor/" tabindex="-1">causti </a><a href="/graph/editor/" tabindex="-1"><img class="dot" src="/assets/images/causti.co.orange.svg" alt="·" width="640" height="640" /></a><a href="/graph/editor/" tabindex="-1"> co</a></h1>
+      <h1><a href="/graph/005-stripes-3/" tabindex="-1">causti </a><a href="/graph/005-stripes-3/" tabindex="-1"><img class="dot" src="/assets/images/causti.co.orange.svg" alt="·" width="640" height="640" /></a><a href="/graph/005-stripes-3/" tabindex="-1"> co</a></h1>
     </header>
     <main>
       <article>
@@ -36,17 +38,17 @@
           <div class="code-editor">
             <div id="code-output"></div>
             <textarea spellcheck="false" id="code-input">
-const substeps = 4;
+const substeps = 8;
 
-// REQUIRED: Declare a function called "step", to be called at each point
-// First two arguments are the position, 0 .. `steps` - 1
-// Third argument has `steps`, and canvas `width` and `height`
 function step(x, y, {steps}) {
-  const yy = Math.floor(y * substeps / steps) * substeps;
-  const xx = Math.floor(x * substeps / steps);
+  const ny = steps - y;
+  const yy = Math.floor(ny * substeps / steps);
+  const yyy = ny % Math.floor(steps / substeps);
+  const nx = steps - x;
+  const xx = Math.floor(nx * substeps / steps);
+  const xxx = nx % Math.floor(steps / substeps);
 
-  // Return truthy for black and falsy for orange
-  return (x | y) % (xx + yy);
+  return (xxx % (xx + 1)) ^ (yyy % (yy + 1));
 }</textarea>
           </div>
           <div class="buttons">
