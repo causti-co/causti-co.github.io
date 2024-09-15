@@ -5,7 +5,7 @@
   <link href="https://causti.cograph/feed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-09-10T00:00:00Z</updated>
+  <updated>2024-09-15T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
@@ -13,6 +13,19 @@
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <category term="graph" />
+  <entry>
+    <title>losing it</title>
+    <link href="https://causti.co/graph/018-losing-it/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/graph/018-losing-it/" />
+    <link rel="alternate" type="image/png" href="https://causti.co/assets/graph/018-losing-it.png" />
+    <id>https://causti.co/graph/018-losing-it/</id>
+    <updated>2024-09-15T00:00:00Z</updated>
+    <published>2024-09-15T00:00:00Z</published>
+    <summary>losing it</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/graph/018-losing-it.png&quot; alt=&quot;losing it&quot; width=&quot;1814&quot; height=&quot;1284&quot; /&gt;
+    </content>
+  </entry>
   <entry>
     <title>noisy cables</title>
     <link href="https://causti.co/graph/017-noisy-cables/" />
