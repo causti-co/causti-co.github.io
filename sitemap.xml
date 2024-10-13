@@ -52,8 +52,13 @@
   </url>
   <url>
     <loc>https://causti.co/photo/</loc>
-    <lastmod>2024-08-25T00:00:00.000Z</lastmod>
+    <lastmod>2024-10-13T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://causti.co/photo/019-goodbye/</loc>
+    <lastmod>2024-10-13T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://causti.co/photo/018-gaben/</loc>
@@ -153,7 +158,7 @@
   
   <url>
     <loc>https://causti.co/about/</loc>
-    <lastmod>2024-10-13T13:49:51.000Z</lastmod>
+    <lastmod>2024-10-13T19:02:32.000Z</lastmod>
     <changefreq>daily</changefreq>
   </url>
 </urlset>

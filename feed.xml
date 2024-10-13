@@ -13,6 +13,20 @@
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
   <entry>
+    <category term="photo" />
+    <title>goodbye</title>
+    <link href="https://causti.co/photo/019-goodbye/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/photo/019-goodbye/" />
+    <link rel="alternate" type="image/webp" href="https://causti.co/assets/photo/019-goodbye-4059w.webp" />
+    <id>https://causti.co/photo/019-goodbye/</id>
+    <updated>2024-10-13T00:00:00Z</updated>
+    <published>2024-10-13T00:00:00Z</published>
+    <summary>The roof of a train station. A pyramid-shaped skyglass shows the clouds above.</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/photo/019-goodbye-4059w.webp&quot; srcset=&quot;https://causti.co/assets/photo/019-goodbye-256w.webp 256w, https://causti.co/assets/photo/019-goodbye-880w.webp 880w, https://causti.co/assets/photo/019-goodbye-1220w.webp 1220w, https://causti.co/assets/photo/019-goodbye-1490w.webp 1490w, https://causti.co/assets/photo/019-goodbye-1710w.webp 1710w, https://causti.co/assets/photo/019-goodbye-1905w.webp 1905w, https://causti.co/assets/photo/019-goodbye-2048w.webp 2048w, https://causti.co/assets/photo/019-goodbye-4059w.webp 4059w&quot; sizes=&quot;100vw&quot; width=&quot;4059&quot; height=&quot;3456&quot; alt=&quot;The roof of a train station. A pyramid-shaped skyglass shows the clouds above.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;
+    </content>
+  </entry>
+  <entry>
     <category term="graph" />
     <title>get glitched</title>
     <link href="https://causti.co/graph/019-get-glitched/" />
@@ -276,20 +290,6 @@
     <summary>shader life</summary>
     <content type="html">
       &lt;img src=&quot;https://causti.co/assets/graph/015-shader-life.png&quot; alt=&quot;shader life&quot; width=&quot;918&quot; height=&quot;918&quot; /&gt;
-    </content>
-  </entry>
-  <entry>
-    <category term="graph" />
-    <title>reaction diffusion shader</title>
-    <link href="https://causti.co/graph/016-reaction-diffusion-shader/" />
-    <link rel="alternate" type="text/html" href="https://causti.co/graph/016-reaction-diffusion-shader/" />
-    <link rel="alternate" type="image/png" href="https://causti.co/assets/graph/016-reaction-diffusion-shader.png" />
-    <id>https://causti.co/graph/016-reaction-diffusion-shader/</id>
-    <updated>2024-08-25T00:00:00Z</updated>
-    <published>2024-08-25T00:00:00Z</published>
-    <summary>reaction diffusion shader</summary>
-    <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/graph/016-reaction-diffusion-shader.png&quot; alt=&quot;reaction diffusion shader&quot; width=&quot;922&quot; height=&quot;922&quot; /&gt;
     </content>
   </entry>
 </feed>
