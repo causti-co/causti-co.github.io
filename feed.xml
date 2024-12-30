@@ -5,13 +5,27 @@
   <link href="https://causti.cofeed.xml" rel="self" />
   <link href="https://causti.co/" />
   <id>https://causti.co/</id>
-  <updated>2024-10-13T00:00:00Z</updated>
+  <updated>2024-12-30T00:00:00Z</updated>
   <author>
     <name>Martín Valdés de León</name>
   </author>
   <generator>Eleventy v2.0.1</generator>
   <icon>https://causti.co/assets/icons/favicon.png</icon>
   <rights>causti • co © 2024 by Martín Valdés de León, is licensed under CC BY-NC-ND 4.0</rights>
+  <entry>
+    <category term="graph" />
+    <title>happy new year</title>
+    <link href="https://causti.co/graph/020-happy-new-year/" />
+    <link rel="alternate" type="text/html" href="https://causti.co/graph/020-happy-new-year/" />
+    <link rel="alternate" type="image/png" href="https://causti.co/assets/graph/020-happy-new-year.png" />
+    <id>https://causti.co/graph/020-happy-new-year/</id>
+    <updated>2024-12-30T00:00:00Z</updated>
+    <published>2024-12-30T00:00:00Z</published>
+    <summary>happy new year</summary>
+    <content type="html">
+      &lt;img src=&quot;https://causti.co/assets/graph/020-happy-new-year.png&quot; alt=&quot;happy new year&quot; width=&quot;512&quot; height=&quot;512&quot; /&gt;
+    </content>
+  </entry>
   <entry>
     <category term="photo" />
     <title>goodbye</title>
@@ -276,20 +290,6 @@
     <summary>reaction diffusion</summary>
     <content type="html">
       &lt;img src=&quot;https://causti.co/assets/graph/014-reaction-diffusion.png&quot; alt=&quot;reaction diffusion&quot; width=&quot;1028&quot; height=&quot;1028&quot; /&gt;
-    </content>
-  </entry>
-  <entry>
-    <category term="graph" />
-    <title>shader life</title>
-    <link href="https://causti.co/graph/015-shader-life/" />
-    <link rel="alternate" type="text/html" href="https://causti.co/graph/015-shader-life/" />
-    <link rel="alternate" type="image/png" href="https://causti.co/assets/graph/015-shader-life.png" />
-    <id>https://causti.co/graph/015-shader-life/</id>
-    <updated>2024-08-25T00:00:00Z</updated>
-    <published>2024-08-25T00:00:00Z</published>
-    <summary>shader life</summary>
-    <content type="html">
-      &lt;img src=&quot;https://causti.co/assets/graph/015-shader-life.png&quot; alt=&quot;shader life&quot; width=&quot;918&quot; height=&quot;918&quot; /&gt;
     </content>
   </entry>
 </feed>
